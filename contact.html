@@ -11,6 +11,8 @@
             overflow: hidden;
             height: 30px;
 			padding: 20px;
+            /*margin-top: 0;
+            margin-bottom: 0;*/
         }
         li{
             float: left;
@@ -24,13 +26,26 @@
         }
         .bkg-img{
             background-image: url("udr.jpg");
-            height: 500px;
+            /*margin-top: 0;*/
             font-size: 50px;
             color: white;
+            text-align: left;
         }
-        h1{
+        div{
             text-align: center;
-            font-family: "Georgia",Serif
+            font-family: "Georgia",Serif;
+            font-weight: bold;
+            align-content: bottom;
+            padding-top: 450px;
+            padding-left: 50px;
+            text-shadow: 0 5px 10px black;
+
+        }
+        #img-details{
+            height: 50px;
+            width: 200px;
+            float: left;
+            padding: 0;
         }
         
     </style>
@@ -38,11 +53,12 @@
     <body>
 
     	<ul>
-		<li><a href="a">Home</a></li>
+        <li><img src="logo.png" id="img-details"></li>
+		<li><a href="project.html">Home</a></li>
 		<li><a href="a">About</a></li>
 		<li><a href="a">Book</a></li>
 		<li><a href="a">Contact Us</a></li>
         </ul>
-    <h1 class="bkg-img">CONTACT US</h1>
+    <div class="bkg-img">CONTACT US</div>
     </body>
 </html>
