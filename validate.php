@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
         }
         else {
             echo "<script language='javascript'>";
-            echo "alert('WRONG INFORMATION')";
+            echo "alert('WRONG PASSWORD')";
             echo "</script>";
             die();
         }

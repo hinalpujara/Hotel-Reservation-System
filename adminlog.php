@@ -35,6 +35,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.php" style="color: black;"><b>Login</b></a>
+          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

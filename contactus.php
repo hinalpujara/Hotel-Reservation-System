@@ -76,6 +76,9 @@
           <li class="nav-item pl-3">
             <a class="nav-link" href="#" style="color: black;"><b>Contact Us</b></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.php" style="color: black;"><b>Login</b></a>
+          </li>
         </ul>
       </div>
     </nav>
