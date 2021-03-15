@@ -36,7 +36,10 @@
             <a class="nav-link" href="#">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="register.php" style="color: black;"><b>Login</b></a>
+            <a class="nav-link" href="adminlog.php">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.php">Register</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
