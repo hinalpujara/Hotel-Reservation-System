@@ -10,11 +10,54 @@
     <title>Login Page</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+        .bkg-img{
+            background-image: url("udr.jpg");
+            /*margin-top: 0;*/
+            font-size: 50px;
+            color: white;
+            text-align: left;
+            font-family: "Georgia",Serif;
+            font-weight: bold;
+            align-content: bottom;
+            padding-top: 425px;
+            padding-left: 50px;
+            text-shadow: 0 5px 10px black;
+        }
+        li{
+            font-size: 20px;
+        }
+        .mycustom-jumbotron {
+              height: 600px;
+              width: 500px;
+              background-color: #FADBD8
+            }
+        .custom-btn{
+            background-color: #FADBD8;
+            border-width: 1px;
+            border-color: black;
 
+        }
+        .loc{
+            background: transparent;
+            border: 0px;
+        }
+        .img-size{
+            width: 70px;
+            height: 80px;
+        }
+        .image-card {
+            padding-left: -15px !important;
+            margin-left:-80px !important;
+}
+        .map-block{
+            display: inline-block;
+        }
+    </style>
     <title>The Victoria</title>
       </head>
       <body>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d3a297">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FADBD8">
         <a class="navbar-brand" href="#">
           <img src="logo.png" width="200" height="50" class="d-inline-block align-center" alt="">
         </a>
@@ -23,29 +66,31 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item active pl-3">
+            <a class="nav-link" href="index.php"><b>Home</b> <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item pl-3">
+            <a class="nav-link" href="#" style="color: black;"><b>About</b> </span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Book</a>
+          <li class="nav-item pl-3">
+            <a class="nav-link" href="#" style="color: black;"><b>Book</b></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="adminlog.php">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="register.php">Register</a>
+          <li class="nav-item pl-3">
+            <a class="nav-link" href="contactus.php" style="color: black;"><b>Contact Us</b></a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="register.php" style="color: black;">
+                  <b>Register</b>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="adminlog.php" style="color: black;">
+                  <b>Login</b>
+                </a>
+            </li>
+        </ul>
       </div>
     </nav>
 	<form action="validate.php" method="post">
