@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Contact Us-The Victoria</title>
+    <title>HOME-The Victoria</title>
     <style type="text/css">
         .bkg-img{
             background-image: url("udr.jpg");
@@ -94,7 +94,7 @@
     </nav>
 
     <!-- hotel carousel -->
-
+<!--
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; ;">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -124,7 +124,19 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
+ -->
+ <!-- replacement for carousel -->
+ <div class="row">
+   <div class="column">
+     <img src="hotel2.jpeg" alt="Snow" style="width:100%">
+   </div>
+   <div class="column">
+     <img src="hotel3.jpeg" alt="Forest" style="width:100%">
+   </div>
+   <div class="column">
+     <img src="hotel1.jpeg" alt="Mountains" style="width:100%">
+   </div>
+ </div>
   <!-- welcome!! -->
   <div class="sections_group">
     <table>
