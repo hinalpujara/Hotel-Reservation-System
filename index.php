@@ -13,6 +13,11 @@
         li{
             font-size: 20px;
         }
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
     </style>
       </head>
       <body>
@@ -62,42 +67,42 @@
                 <div class="carousel-item active">
                     <div class="col-md-4 mx-auto">
                         <div class="card card-body">
-                            <img class="img-fluid" src="hotel1.jpeg" alt="">
+                            <img class="card-img-top" src="hotel1.jpeg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4 mx-auto">
                         <div class="card card-body">
-                            <img class="img-fluid" src="hotel2.jpeg" alt="">
+                            <img class="card-img-top" src="hotel2.jpeg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4 mx-auto">
                         <div class="card card-body">
-                            <img class="img-fluid" src="hotel3.jpeg" alt="">
+                            <img class="card-img-top" src="hotel3.jpeg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4 mx-auto">
                         <div class="card card-body">
-                            <img class="img-fluid" src="hotel4.jpeg" alt="">
+                            <img class="card-img-top" src="hotel4.jpeg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4 mx-auto">
                         <div class="card card-body">
-                            <img class="img-fluid" src="corousal2.jpeg" alt="">
+                            <img class="card-img-top" src="corousal2.jpeg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-4 mx-auto">
                         <div class="card card-body">
-                            <img class="img-fluid" src="corousal3.jpeg" alt="">
+                            <img class="card-img-top" src="corousal3.jpeg" alt="">
                         </div>
                     </div>
                 </div>
