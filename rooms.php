@@ -10,6 +10,48 @@
 
     <title>Rooms-The Victoria</title>
     <style>
+    .bkg-img{
+        background-image: url("udr.jpg");
+        /*margin-top: 0;*/
+        font-size: 50px;
+        color: white;
+        text-align: left;
+        font-family: "Georgia",Serif;
+        font-weight: bold;
+        align-content: bottom;
+        padding-top: 425px;
+        padding-left: 50px;
+        text-shadow: 0 5px 10px black;
+    }
+    li{
+        font-size: 20px;
+    }
+    .mycustom-jumbotron {
+          height: 600px;
+          width: 500px;
+          background-color: #FADBD8
+        }
+    .custom-btn{
+        background-color: #FADBD8;
+        border-width: 1px;
+        border-color: black;
+
+    }
+    .loc{
+        background: transparent;
+        border: 0px;
+    }
+    .img-size{
+        width: 70px;
+        height: 80px;
+    }
+    .image-card {
+        padding-left: -15px !important;
+        margin-left:-80px !important;
+}
+    .map-block{
+        display: inline-block;
+    }
         .column {
             float: left;
             width:33.33%;
@@ -28,6 +70,11 @@
         .ml-2 {
           margin-left: (spacer * .50) !important;
               }
+        .btn{
+          background-color: #FADBD8;
+          border:  #FADBD8;
+          color: black;
+        }
     </style>
       </head>
     <body>
@@ -68,7 +115,7 @@
       </ul>
     </div>
   </nav>
-  <div style="background-color: #a1c9d0;">
+  <div style="background-color: white;">
     <br>
     <div>
         <h1 style="font-style: italic; text-align: center;" >
@@ -85,14 +132,14 @@
          <tr>
             <td>
               <div class="image_wrapper"><img class="scale-with-grid" src="rooms_src/room5.jpeg" alt="home_hotel2_gallery7" width="700" height="400" /></div>
-              
+
           </td>
           <td>
               <div class="ml-2">
                 <h2 style="font-style: italic;"><b>Deluxe</b></h2>
-  
+
                 <p>These Deluxe Rooms let you relax as you admire a beautiful view of the garden.</p>
-                <h5>Stay and enjoy as we provide the following Aminities for <b style="font-style: italic;">Deluxe</b> room</h5>
+                <h5>Stay and enjoy as we provide the following Amenities for <b style="font-style: italic;">Deluxe</b> room</h5>
                 <ul>
                   <li>
                     <b>WiFi</b>
@@ -127,7 +174,7 @@
               <h2 style="font-style: italic;"><b>Premium</b></h2>
 
               <p>Premium rooms are modern, spacious and artistically designed, and the comfortable furniture, as well as the tranquil and peaceful atmosphere will provide a pleasant vacation and the quiet needed to complete business tasks that take up a great amount of time.</p>
-              <h5>Stay and enjoy as we provide the following Aminities for <b style="font-style: italic;">Premium</b> room</h5>
+              <h5>Stay and enjoy as we provide the following Amenities for <b style="font-style: italic;">Premium</b> room</h5>
               <ul>
                 <li>
                   <b>WiFi</b>
@@ -160,14 +207,14 @@
        <tr>
           <td>
             <div class="image_wrapper"><img class="scale-with-grid" src="rooms_src/room1.jpeg" alt="home_hotel2_gallery7" width="700" height="400" /></div>
-            
+
         </td>
         <td>
             <div class="ml-2">
               <h2 style="font-style: italic;"><b>Luxury</b></h2>
 
               <p>These Luxury Rooms let you relax as you admire a beautiful view of the pool. It provides the best hospitality that probably you would have never enjoyed</p>
-              <h5>Stay and enjoy as we provide the following Aminities for <b style="font-style: italic;">Luxury</b> room</h5>
+              <h5>Stay and enjoy as we provide the following Amenities for <b style="font-style: italic;">Luxury</b> room</h5>
               <ul>
                 <li>
                   <b>WiFi</b>
@@ -207,7 +254,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <button type="button" class="btn btn-success" style="width: max-content;">BOOK NOW</button>
+                <button type="button" class="btn btn-success" href="booking.php">BOOK NOW</button>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>HOME-The Victoria</title>
+    <title>Contact Us-The Victoria</title>
     <style type="text/css">
         .bkg-img{
             background-image: url("udr.jpg");
@@ -71,6 +71,9 @@
             <a class="nav-link" href="#" style="color: black;"><b>About</b> </span></a>
           </li>
           <li class="nav-item pl-3">
+            <a class="nav-link" href="rooms.php" style="color: black;"><b>Rooms</b> </span></a>
+          </li>
+          <li class="nav-item pl-3">
             <a class="nav-link" href="booking.php" style="color: black;"><b>Book</b></a>
           </li>
           <li class="nav-item pl-3">
@@ -94,7 +97,7 @@
     </nav>
 
     <!-- hotel carousel -->
-<!--
+
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; ;">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -124,19 +127,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
- -->
- <!-- replacement for carousel -->
- <div class="row">
-   <div class="column">
-     <img src="hotel2.jpeg" alt="Snow" style="width:100%">
-   </div>
-   <div class="column">
-     <img src="hotel3.jpeg" alt="Forest" style="width:100%">
-   </div>
-   <div class="column">
-     <img src="hotel1.jpeg" alt="Mountains" style="width:100%">
-   </div>
- </div>
+
   <!-- welcome!! -->
   <div class="sections_group">
     <table>

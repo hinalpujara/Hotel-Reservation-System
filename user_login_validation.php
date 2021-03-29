@@ -12,7 +12,7 @@ function test_input($data) {
 
 if ($_SERVER["REQUEST_METHOD"]== "POST") {
 
-    $adminname = test_input($_POST["adminname"]);
+    $email = test_input($_POST["email"]);
     $password = test_input($_POST["password"]);
     $stmt = $conn->prepare("SELECT * FROM user_data");
     $stmt->execute();
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
 
     foreach($users as $user) {
 
-        if(($user['user_username'] == $adminname) &&
+        if(($user['email'] == $email) &&
             ($user['user_password'] == $password)) {
                 header("Location: adminpage.php");
         }

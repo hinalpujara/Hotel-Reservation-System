@@ -8,8 +8,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Rooms-The Victoria</title>
-    <style>
+    <title>Payment-The Victoria</title>
+    <style type="text/css">
+    li{
+        font-size: 20px;
+    }
+    .mycustom-jumbotron {
+          height: 600px;
+          width: 500px;
+          background-color: #FADBD8;
+        }
+    .custom-btn{
+        background-color: #FADBD8;
+        border-width: 1px;
+        border-color: black;
+
+    }
+    .loc{
+        background: transparent;
+        border: 0px;
+    }
+    .img-size{
+        width: 70px;
+        height: 80px;
+    }
+    .image-card {
+        padding-left: -15px !important;
+        margin-left:-80px !important;
+}
+    .map-block{
+        display: inline-block;
+    }
         .column {
             float: left;
             width:33.33%;
@@ -23,7 +52,7 @@
             display: table;
                 }
                 .container-fluid {
-    background-color: #C5CAE9
+    background-color: white
 }
 
 .heading {
@@ -36,7 +65,8 @@
 .card {
     border-radius: 10px !important;
     margin-top: 60px;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    background-color: #FADBD8;
 }
 
 .form-card {
