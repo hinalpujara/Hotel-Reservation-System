@@ -24,13 +24,11 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
             ($user['password'] == $password)) {
                 header("Location: admindisplay.php");
         }
-        else {
-            echo "<script language='javascript'>";
-            echo "alert('WRONG PASSWORD')";
-            echo "</script>";
-            die();
-        }
     }
+        echo "<script language='javascript'>";
+        echo "alert('WRONG PASSWORD')";
+        echo "</script>";
+        die();
 }
 
 ?>
