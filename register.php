@@ -71,6 +71,9 @@
             <a class="nav-link" href="#" style="color: black;"><b>About</b> </span></a>
           </li>
           <li class="nav-item pl-3">
+            <a class="nav-link" href="rooms.php" style="color: black;"><b>Rooms</b> </span></a>
+          </li>
+          <li class="nav-item pl-3">
             <a class="nav-link" href="booking.php" style="color: black;"><b>Book</b></a>
           </li>
           <li class="nav-item pl-3">
@@ -132,7 +135,7 @@
             </div>
         </form>
         <div class="border-top pt-3">
-            <small class="text-muted">Already a Member?<a class="ml-2" href="#">Sign In</a></small>
+            <small class="text-muted">Already a Member?<a class="ml-2" href="userlogin.php">Sign In</a></small>
         </div>
     </div>
     </div>

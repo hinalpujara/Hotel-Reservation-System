@@ -249,6 +249,9 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
           <a class="nav-link" href="#" style="color: black;"><b>About</b> </span></a>
         </li>
         <li class="nav-item pl-3">
+            <a class="nav-link" href="rooms.php" style="color: black;"><b>Rooms</b> </span></a>
+          </li>
+        <li class="nav-item pl-3">
           <a class="nav-link" href="booking.php" style="color: black;"><b>Book</b></a>
         </li>
         <li class="nav-item pl-3">

@@ -8,49 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Contact Us-The Victoria</title>
+    <title>Home-The Victoria</title>
     <style type="text/css">
-        .bkg-img{
-            background-image: url("udr.jpg");
-            /*margin-top: 0;*/
-            font-size: 50px;
-            color: white;
-            text-align: left;
-            font-family: "Georgia",Serif;
-            font-weight: bold;
-            align-content: bottom;
-            padding-top: 425px;
-            padding-left: 50px;
-            text-shadow: 0 5px 10px black;
-        }
         li{
             font-size: 20px;
-        }
-        .mycustom-jumbotron {
-              height: 600px;
-              width: 500px;
-              background-color: #FADBD8
-            }
-        .custom-btn{
-            background-color: #FADBD8;
-            border-width: 1px;
-            border-color: black;
-
-        }
-        .loc{
-            background: transparent;
-            border: 0px;
-        }
-        .img-size{
-            width: 70px;
-            height: 80px;
-        }
-        .image-card {
-            padding-left: -15px !important;
-            margin-left:-80px !important;
-}
-        .map-block{
-            display: inline-block;
         }
     </style>
       </head>
@@ -96,45 +57,13 @@
       </div>
     </nav>
 
-    <!-- hotel carousel -->
-
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; ;">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class=" d-block w-100" src="hotel1.jpeg" alt="First slide" height="700">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 " src="hotel2.jpeg" alt="Second slide"height="700">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="hotel3.jpeg" alt="Third slide"height="700">
-        </div>
-
-      </div>
-      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
   <!-- welcome!! -->
   <div class="sections_group">
     <table>
       <tr>
         <td>
           <div class="entry-content" itemprop="mainContentOfPage">
-            <div class="section mcb-section   "  style="padding-top:80px; padding-bottom:60px; background-color:" ><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap one  valign-top clearfix" style="" ><div class="mcb-wrap-inner"><div class="column mcb-column one-second column_image "><div class="image_frame image_item no_link scale-with-grid no_border" ><div class="image_wrapper"><img class="scale-with-grid" src="udaipur3.jpg" alt="home_hotel2_gallery7" width="800" height="500" /></div>
+            <div class="section mcb-section   "  style="padding-top:0px; padding-bottom:60px; background-color:" ><div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap one  valign-top clearfix" style="" ><div class="mcb-wrap-inner"><div class="column mcb-column one-second column_image "><div class="image_frame image_item no_link scale-with-grid no_border" ><div class="image_wrapper"><img class="scale-with-grid" src="udaipur3.jpg" alt="home_hotel2_gallery7" width="800" height="500" /></div>
             </div>
         </td>
         <td>

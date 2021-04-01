@@ -71,6 +71,9 @@
             <a class="nav-link" href="#" style="color: black;"><b>About</b> </span></a>
           </li>
           <li class="nav-item pl-3">
+            <a class="nav-link" href="rooms.php" style="color: black;"><b>Rooms</b> </span></a>
+          </li>
+          <li class="nav-item pl-3">
             <a class="nav-link" href="booking.php" style="color: black;"><b>Book</b></a>
           </li>
           <li class="nav-item pl-3">
@@ -120,7 +123,7 @@
         <input type="text" class="form-control" id="inputMessage" placeholder="Write your message here..." name="message">
     </div>
 <div class="text-center">
-    <button type="submit" class="btn custom-btn">Send a message</button>
+    <button type="submit" class="btn custom-btn" href="contactus.php">Send a message</button>
 </div>
 </form>
 </div>
@@ -164,7 +167,7 @@
                         <b>Contact Number</b>
                     </h6>
                     <p>
-                        +91 89765 4635<br>+91 99301 25372<br>+91 87793 69930
+                        +91 89765 14635<br>+91 99301 25372<br>+91 87793 69930
                     </p>
                   </div>
                 </div>
