@@ -23,6 +23,10 @@
             padding-left: 50px;
             text-shadow: 0 5px 10px black;
         }
+        header{
+          position: fixed;
+          width: 100%;
+        }
         li{
             font-size: 20px;
         }

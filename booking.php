@@ -27,6 +27,10 @@
         li{
             font-size: 20px;
         }
+        header{
+          position: fixed;
+          width: 100%;
+        }
         .mycustom-jumbotron {
               height: 600px;
               width: 500px;
@@ -246,6 +250,8 @@
       </head>
       <body>
       <?php include "navbar.php"; ?>
+      <br>
+      <br>
     <div id="booking" class="section">
       <div class="section-center">
           <div class="container">

@@ -18,6 +18,10 @@
             width:33.33%;
             padding: 5px;
         }
+        header{
+          position: fixed;
+          width: 100%;
+        }
 
 /* Clear floats after image containers */
         .row::after {

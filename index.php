@@ -13,6 +13,10 @@
         li{
             font-size: 20px;
         }
+        header{
+          position: fixed;
+          width: 100%;
+        }
     </style>
       </head>
       <body>
