@@ -13,6 +13,7 @@
         header{
           position: fixed;
           width: 100%;
+          z-index: 100;
         }
         .bkg-img{
             background-image: url("udr.jpg");
