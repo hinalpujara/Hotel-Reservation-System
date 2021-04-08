@@ -67,17 +67,44 @@ body{
   font-size: 35px;
   font-family: 'Noto Serif', serif;
 }
-    
+.btn {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:#FADBD8;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.centered {
+  color: #ffffff;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
   </style>
 </head>
 
 <body>
   <?php include "navbar/navbar.php"; ?>
-
+  <div >
+  <img src="https://cdn1.goibibo.com/voy_ing/t_fs/rajasthan-udaipur-148046305118o.jpeg" alt="Udaipur" style="width:100%; height: 600px;">
+  <div class="centered"><h1>Welcome to The Victoria</h1></div>
+  <a class="btn" href="#Welcome">More about us</a>
+</div>
+  
   <!-- welcome!! -->
 
-  <div class="sections_group" style="padding-top:70px;">
-    <table>
+  <div class="sections_group" style="padding-top:30px;" id="Welcome">
+  
+    <table >
       <tr>
         <td>
           <div class="entry-content" itemprop="mainContentOfPage">
@@ -201,103 +228,7 @@ body{
     </div>
   </div>
 </div>
-<!-- cards-carousel -->
-  <section class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 text-right">
-          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left"></i>
-          </a>
-          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-            <i class="fa fa-arrow-right"></i>
-          </a>
-        </div>
-        <div class="col-12">
-          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img class="img-fluid" alt="100%x280" src="spa1.jpg">
-                      <div class="card-body">
-                        <h4 class="card-title">IN-HOTEL SPA</h4>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
-                      <div class="card-body">
-                        <h4 class="card-title">Special title treatment</h4>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
-                      <div class="card-body">
-                        <h4 class="card-title">Special title treatment</h4>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
-                      <div class="card-body">
-                        <h4 class="card-title">Special title treatment</h4>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
-                      <div class="card-body">
-                        <h4 class="card-title">Special title treatment</h4>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <div class="card">
-                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
-                      <div class="card-body">
-                        <h4 class="card-title">Special title treatment</h4>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
 
