@@ -12,7 +12,7 @@
             <a class="nav-link" href="index.php"><b>Home</b> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item pl-3">
-            <a class="nav-link" href="#" style="color: black;"><b>About</b> </span></a>
+            <a class="nav-link" href="Destinations.php" style="color: black;"><b>Destinations</b> </span></a>
           </li>
           <li class="nav-item pl-3">
             <a class="nav-link" href="rooms.php" style="color: black;"><b>Rooms</b> </span></a>

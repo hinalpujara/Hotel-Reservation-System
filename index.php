@@ -51,7 +51,7 @@ justify-content: space-around !important;
 
 .mycard{
 translate : .5s ease-in-out !important;
-box-shadow : 3px 3px #888888 !important:
+box-shadow : 3px 3px #888888 !important;
 }
 
 .mycard:hover{
@@ -209,6 +209,7 @@ body{
     </div>
   </div>
 </div>
+<!-- cards-carousel -->
   <section class="pt-5 pb-5">
     <div class="container">
       <div class="row">
