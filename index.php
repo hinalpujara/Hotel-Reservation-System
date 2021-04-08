@@ -24,16 +24,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
-
-    li {
-      font-size: 20px;
-    }
-
-    header {
-      position: fixed;
-      width: 100%;
-      z-index: 100;
-    }
+    
+    <?php include "navbar/navbarCSS.php"; ?>
 
     .cards{
       width: 100vw;
@@ -56,7 +48,7 @@ box-shadow : 3px 3px #888888 !important:
 
 .mycard:hover{
 cursor : pointer;
-transform : scale(1.05);
+transform : scale(1.1);
 }
 
 .myimg{
@@ -80,7 +72,7 @@ body{
 </head>
 
 <body>
-  <?php include "navbar.php"; ?>
+  <?php include "navbar/navbar.php"; ?>
 
   <!-- welcome!! -->
 
@@ -96,7 +88,7 @@ body{
                     <div class="column mcb-column one-second column_image ">
                       <div class="image_frame image_item no_link scale-with-grid no_border">
                         <div class="image_wrapper">
-                          <img class="scale-with-grid" src="udaipur3.jpg" alt="home_hotel2_gallery7">
+                          <img class="scale-with-grid" src="images/udaipur3.jpg" alt="home_hotel2_gallery7">
                         </div>
                       </div>
         </td>

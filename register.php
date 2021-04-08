@@ -10,59 +10,14 @@
 
     <title>Contact Us-The Victoria</title>
     <style type="text/css">
-        .bkg-img{
-            background-image: url("udr.jpg");
-            /*margin-top: 0;*/
-            font-size: 50px;
-            color: white;
-            text-align: left;
-            font-family: "Georgia",Serif;
-            font-weight: bold;
-            align-content: bottom;
-            padding-top: 425px;
-            padding-left: 50px;
-            text-shadow: 0 5px 10px black;
-        }
-        header{
-          position: fixed;
-          width: 100%;
-        }
-        li{
-            font-size: 20px;
-        }
-        .mycustom-jumbotron {
-              height: 600px;
-              width: 500px;
-              background-color: #FADBD8
-            }
-        .custom-btn{
-            background-color: #FADBD8;
-            border-width: 1px;
-            border-color: black;
-
-        }
-        .loc{
-            background: transparent;
-            border: 0px;
-        }
-        .img-size{
-            width: 70px;
-            height: 80px;
-        }
-        .image-card {
-            padding-left: -15px !important;
-            margin-left:-80px !important;
-}
-        .map-block{
-            display: inline-block;
-        }
+        <?php include "navbar/navbarCSS.php"; ?>
     </style>
       </head>
       <body>
-      <?php include "navbar.php"; ?>
-    <div class="container ">
+      <?php include "navbar/navbar.php"; ?>
+    <div class="container">
     <div class="jumbotron" style="background-color: white;" >
-     <img src="avatar.png" alt="Maxwell Admin" class="mx-auto d-block img-fluid unlock-icon" style="height: 200px;">
+     <img src="images/avatar.png" alt="Maxwell Admin" class="mx-auto d-block img-fluid unlock-icon pt-5" style="height: 200px;">
         <form action="registrationdata.php" method="POST">
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Customer Registration</legend>

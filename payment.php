@@ -10,40 +10,8 @@
 
     <title>Payment-The Victoria</title>
     <style type="text/css">
-    li{
-        font-size: 20px;
-    }
-    header{
-          position: fixed;
-          width: 100%;
-          z-index: 100;
-        }
-    .mycustom-jumbotron {
-          height: 600px;
-          width: 500px;
-          background-color: #FADBD8;
-        }
-    .custom-btn{
-        background-color: #FADBD8;
-        border-width: 1px;
-        border-color: black;
-
-    }
-    .loc{
-        background: transparent;
-        border: 0px;
-    }
-    .img-size{
-        width: 70px;
-        height: 80px;
-    }
-    .image-card {
-        padding-left: -15px !important;
-        margin-left:-80px !important;
-}
-    .map-block{
-        display: inline-block;
-    }
+        <?php include "navbar/navbarCSS.php"; ?>
+        
         .column {
             float: left;
             width:33.33%;
@@ -238,7 +206,7 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
     </script>
       </head>
     <body>
-    <?php include "navbar.php"; ?>
+    <?php include "navbar/navbar.php"; ?>
   <!-- payment -->
   <div class="container-fluid">
     <div class="row justify-content-center">

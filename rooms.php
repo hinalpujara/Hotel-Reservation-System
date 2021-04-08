@@ -10,18 +10,14 @@
 
     <title>Rooms-The Victoria</title>
     <style>
-          li{
-              font-size: 20px;
-          }
+          <?php include "navbar/navbarCSS.php"; ?>
+
         .column {
             float: left;
             width:33.33%;
             padding: 5px;
         }
-        header{
-          position: fixed;
-          width: 100%;
-        }
+
 
 /* Clear floats after image containers */
         .row::after {
@@ -33,7 +29,7 @@
     </style>
       </head>
     <body>
-    <?php include "navbar.php"; ?>
+    <?php include "navbar/navbar.php"; ?>
   <div style="background-color: white;">
     <br>
     <div>
