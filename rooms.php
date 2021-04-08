@@ -12,7 +12,7 @@
     <style>
           li{
               font-size: 20px;
-          } 
+          }
         .column {
             float: left;
             width:33.33%;
@@ -183,7 +183,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <button type="button" class="btn btn-success" href="booking.php">BOOK NOW</button>
+                <button type="button" class="btn btn-success" onclick="document.location='booking.php'">BOOK NOW</button>
             </div>
         </div>
     </div>
