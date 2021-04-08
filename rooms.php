@@ -29,17 +29,7 @@
             clear: both;
             display: table;
                 }
-        .ml-4 {
-          margin-left: (spacer * 1.25) !important;
-              }
-        .ml-2 {
-          margin-left: (spacer * .50) !important;
-              }
-        .btn{
-          background-color: #FADBD8;
-          border:  #FADBD8;
-          color: black;
-        }
+
     </style>
       </head>
     <body>

@@ -7,10 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
   <title>Home-The Victoria</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0493cbe504.js" crossorigin="anonymous"></script>
   <style type="text/css">
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+
     li {
       font-size: 20px;
     }
@@ -20,6 +34,47 @@
       width: 100%;
       z-index: 100;
     }
+
+    .cards{
+      width: 100vw;
+      margin: 10px auto;
+    }
+
+    .row_cards{
+      margin: 10px auto;
+    }
+
+    .myrow{
+display: flex !important;
+justify-content: space-around !important;
+}
+
+.mycard{
+translate : .5s ease-in-out !important;
+box-shadow : 3px 3px #888888 !important:
+}
+
+.mycard:hover{
+cursor : pointer;
+transform : scale(1.05);
+}
+
+.myimg{
+  height: 200px;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+}
+
+.custom-heading{
+  font-family: 'New Tegomin', serif;
+  font-size: 50px;
+}
+.quotes{
+  font-size: 35px;
+  font-family: 'Noto Serif', serif;
+}
     
   </style>
 </head>
@@ -57,11 +112,6 @@
       </tr>
     </table>
   </div>
-  <div style="text-align: center;">
-    <h1>
-      Amenities
-    </h1>
-  </div>
 
   <div class="section mcb-section dark  " style="padding-top:40px; padding-bottom:25px; background-color:#ffffff; background-image:url(http://hopp-inn.com/wp-content/uploads/2015/11/home_hotel2_subheader1.jpg); background-repeat:no-repeat; background-position:center;">
     <div class="section_wrapper mcb-section-inner">
@@ -79,7 +129,86 @@
       </div>
     </div>
   </div>
-  <br>
+
+  <!--Cards-->
+  <div class="container">
+  <h2 class="prob_head m-4 text-center custom-heading">Amenities</h2>
+  <h6 class="prob_desc text-center mb-3">The challenge is not a lack of food — it is making food consistently available to everyone who needs it.</h6>
+  </div>
+<div class="container-fluid cards">
+  <div class="row mx-auto row_cards">
+    <div class="col-10 mx-auto">
+      <div class="row myrow pb-4">
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+          <div class="card my-2  mycard shadow h-100" style="width: 18rem;">
+            <img src="https://img4.nbstatic.in/tr:w-500/577b59244cedfd000e025075.jpg" class="card-img-top myimg"
+              alt="..." />
+            <div class="card-body">
+            <h4 class="text-center">SPA</h4>
+              <p class="card-text card_p">Hunger kills more people each year than AIDS, malaria and terrorism combined
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
+          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+            <img src="https://newslanded.com/wp-content/uploads/2020/04/42de7cbe3ff10d84b2a281d4172da65c.png"
+              class="card-img-top myimg" alt="..." />
+            <div class="card-body">
+              <h5></h5>
+              <p class="card-text card_p">Every 10 seconds, a child dies from hunger</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
+          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+            <img
+              src="https://timesofindia.indiatimes.com/thumb/msid-71497463,imgsize-383337,width-400,resizemode-4/71497463.jpg"
+              class="card-img-top myimg" alt="..." />
+            <div class="card-body">
+              <p class="card-text card_p">82% of hungry people live in countries with food surpluses, not food shortages
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-auto row_cards">
+    <div class="col-10 mx-auto">
+      <div class="row myrow">
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
+          <div class="card my-2  mycard shadow h-100" style="width: 18rem;">
+            <img
+              src="https://ichef.bbci.co.uk/news/400/cpsprodpb/156EE/production/_113309778_gettyimages-524903696.jpg"
+              class="card-img-top myimg " alt="..." />
+            <div class="card-body">
+              <p class="card-text card_p">One in every eight people sleeps hungry each night</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
+          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+            <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2017/08/29/980906-178891002.jpg?itok=ev1gSm8g"
+              class="card-img-top myimg" alt="..." />
+            <div class="card-body">
+              <p class="card-text card_p">One-third of the food produced around the world is never consumed</p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
+          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+            <img src="https://static.toiimg.com/thumb/msid-72523533,width-1200,height-900,resizemode-4/.jpg"
+              class="card-img-top myimg" alt="..." />
+            <div class="card-body">
+              <p class="card-text card_p">850 million hungry people in the world</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <section class="pt-5 pb-5">
     <div class="container">
       <div class="row">
