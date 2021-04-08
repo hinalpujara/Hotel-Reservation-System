@@ -10,11 +10,8 @@
 
     <title>Contact Us-The Victoria</title>
     <style type="text/css">
-        header{
-          position: fixed;
-          width: 100%;
-          z-index: 100;
-        }
+        <?php include "navbar/navbarCSS.php"; ?>
+
         .bkg-img{
             background-image: url("udr.jpg");
             /*margin-top: 0;*/
@@ -28,9 +25,7 @@
             padding-left: 50px;
             text-shadow: 0 5px 10px black;
         }
-        li{
-            font-size: 20px;
-        }
+      
         .mycustom-jumbotron {
               height: 600px;
               width: 500px;
@@ -60,7 +55,7 @@
     </style>
       </head>
       <body>
-      <?php include "navbar.php"; ?>
+      <?php include "navbar/navbar.php"; ?>
     <div class="bkg-img">CONTACT US</div>
 </div>
 <div class="jumbotron">

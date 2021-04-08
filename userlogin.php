@@ -11,19 +11,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
-        header{
-          position: fixed;
-          width: 100%;
-          z-index: 100;
-        }
-        li{
-            font-size: 20px;
-        }
+        <?php include "navbar/navbarCSS.php"; ?>
     </style>
     <title>The Victoria</title>
       </head>
       <body>
-      <?php include "navbar.php"; ?>
+      <?php include "navbar/navbar.php"; ?>
 
 	<form action="user_login_validation.php" method="post">
         <div class="login-box">

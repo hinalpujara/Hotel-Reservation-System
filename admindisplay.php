@@ -10,17 +10,11 @@
     <link rel="stylesheet" href="display.css">
     <title>Contact Us-The Victoria</title>
     <style type="text/css">
-        li{
-            font-size: 20px;
-        }
-        header{
-          position: fixed;
-          width: 100%;
-        }
+        <?php include "navbar/navbarCSS.php"; ?>
     </style>
       </head>
       <body>
-      <?php include "navbar.php"; ?>
+      <?php include "navbar/navbar.php"; ?>
     <br>
     <h2>Booking Data</h2>
           <?php
