@@ -135,7 +135,7 @@ transform : scale(1.1);
   <!--Cards-->
   <div class="container body-custom">
   <h2 class="prob_head m-4 text-center custom-heading">Amenities</h2>
-  <h6 class="prob_desc text-center mb-3">The challenge is not a lack of food — it is making food consistently available to everyone who needs it.</h6>
+  <h6 class="prob_desc text-center mb-3">Here in Victoria we not only provide Room facilities but also some In-Hotel Amenities such as Spa, Gym etc.Enjoy While you stay!!</h6>
   </div>
 <div class="container-fluid cards body-custom">
   <div class="row mx-auto row_cards">
@@ -154,10 +154,10 @@ transform : scale(1.1);
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
           <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
-            <img src="https://newslanded.com/wp-content/uploads/2020/04/42de7cbe3ff10d84b2a281d4172da65c.png"
+            <img src="https://images.theconversation.com/files/339674/original/file-20200604-130929-iutdtd.jpg?ixlib=rb-1.1.0&rect=8%2C0%2C5455%2C3637&q=45&auto=format&w=496&fit=clip"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
-              <h5></h5>
+            <h4 class="text-center">GYM</h4>
               <p class="card-text card_p">Every 10 seconds, a child dies from hunger</p>
             </div>
           </div>
@@ -211,12 +211,7 @@ transform : scale(1.1);
     </div>
   </div>
 </div>
-
-
-
-
-
-
+<?php include "footer.php"; ?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
