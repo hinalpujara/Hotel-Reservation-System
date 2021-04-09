@@ -11,15 +11,16 @@
     <title>Contact Us-The Victoria</title>
     <style>
       <?php include "navbar/navbarCSS.php"; ?>
+      .vid{
+        max-height: 50
+      }
     </style>
 </head>
 <body>
     <?php include "navbar/navbar.php"; ?>
-    
-
-    
-    <div class="embed-responsive embed-responsive-16by9" style="height: 600px;">
-    <video width="320" height="240" autoplay muted>
+        
+    <div class="embed-responsive embed-responsive-16by9 vid">
+    <video autoplay muted>
       <source src="video/udr_video.mp4" type="video/mp4">
     </video>
   <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tsDbCKUyNSk" allowfullscreen style="padding-top: 70px;"></iframe> -->
