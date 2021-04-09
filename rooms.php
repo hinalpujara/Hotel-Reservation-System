@@ -31,14 +31,8 @@
     <body>
     <?php include "navbar/navbar.php"; ?>
   <div style="background-color: white; padding-top:70px">
-    <br>
-    <div>
-        <h1 style="font-style: italic; text-align: center;" >
-            Types of Rooms and Amenities
-        </h1>
-    </div>
     <div class="section mcb-section dark  " style="padding-top:40px; padding-bottom:25px; background-color:#ffffff; background-image:url(http://hopp-inn.com/wp-content/uploads/2015/11/home_hotel2_subheader1.jpg); background-repeat:no-repeat; background-position:center; height:200px">
-    <h2 style="color: white; text-align: center;">The rooms are well equipped and host an ambience of modern comforts, modern amenities and ensure a delightful experience throughout your stay.</h2>
+    <h1 style="color: white; text-align: center;padding-top:35px; font-family:cursuive; font-style:italic" >Types of Rooms and Amenities</h1>
   </div>
     <div class="conainer" style="padding-top: 50px;">
       <div class="ml-4">
@@ -170,7 +164,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <button type="button" class="btn btn-success" onclick="document.location='booking.php'">BOOK NOW</button>
+                <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white">BOOK NOW</button>
             </div>
         </div>
     </div>
