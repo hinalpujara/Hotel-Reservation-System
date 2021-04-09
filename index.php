@@ -77,6 +77,7 @@ transform : scale(1.1);
   color: black;
   font-size: 16px;
   padding: 12px 24px;
+  margin-top: 200px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -94,14 +95,14 @@ transform : scale(1.1);
 
 <body>
   <?php include "navbar/navbar.php"; ?>
-  <div >
-  <img src="https://cdn1.goibibo.com/voy_ing/t_fs/rajasthan-udaipur-148046305118o.jpeg" alt="Udaipur" style="width:100%; height: 600px;">
-  <div class="centered"><h1>Welcome to The Victoria</h1></div>
+   <div >
+  <img src="https://images.thrillophilia.com/image/upload/s--Obzo5CKX--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/053/295/original/1463646642_Udaipur_3.jpg.jpg" alt="Udaipur" style="width:100%; height: 600px;">
+  <div class="centered" style="margin-top: 200px;"><h1>Welcome to The Victoria</h1></div>
   <a class="btn" href="#Welcome">More about us</a>
 </div>
-  
-  <!-- welcome!! -->
 
+  <!-- welcome!! -->
+  <div class="jumbotron">
   <div class="sections_group" style="padding-top:30px;" id="Welcome">
   
     <table >
@@ -130,6 +131,7 @@ transform : scale(1.1);
         </td>
       </tr>
     </table>
+  </div>
   </div>
 
   <!--Cards-->
