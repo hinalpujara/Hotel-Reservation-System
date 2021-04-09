@@ -19,7 +19,10 @@
 
     
     <div class="embed-responsive embed-responsive-16by9" style="height: 600px;">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tsDbCKUyNSk" allowfullscreen style="padding-top: 70px;"></iframe>
+    <video width="320" height="240" autoplay muted>
+      <source src="video/udr_video.mp4" type="video/mp4">
+    </video>
+  <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tsDbCKUyNSk" allowfullscreen style="padding-top: 70px;"></iframe> -->
 </div>
 <!-- cards-carousel -->
 <section class="pt-5 pb-5">
