@@ -55,7 +55,7 @@ transform : scale(1.1);
   height: 200px;
 }
 
-body{
+.body-custom{
   font-family: 'Mulish', sans-serif;
 }
 
@@ -150,11 +150,11 @@ body{
   </div>
 
   <!--Cards-->
-  <div class="container">
+  <div class="container body-custom">
   <h2 class="prob_head m-4 text-center custom-heading">Amenities</h2>
   <h6 class="prob_desc text-center mb-3">The challenge is not a lack of food — it is making food consistently available to everyone who needs it.</h6>
   </div>
-<div class="container-fluid cards">
+<div class="container-fluid cards body-custom">
   <div class="row mx-auto row_cards">
     <div class="col-10 mx-auto">
       <div class="row myrow pb-4">
