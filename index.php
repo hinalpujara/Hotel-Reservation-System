@@ -132,23 +132,6 @@ transform : scale(1.1);
     </table>
   </div>
 
-  <div class="section mcb-section dark  " style="padding-top:40px; padding-bottom:25px; background-color:#ffffff; background-image:url(http://hopp-inn.com/wp-content/uploads/2015/11/home_hotel2_subheader1.jpg); background-repeat:no-repeat; background-position:center;">
-    <div class="section_wrapper mcb-section-inner">
-      <div class="wrap mcb-wrap one  valign-top clearfix">
-        <div class="mcb-wrap-inner">
-          <div class="column mcb-column one-sixth column_placeholder">
-            <div class="placeholder">&nbsp;</div>
-          </div>
-          <div class="column mcb-column two-third column_column  column-margin-0px">
-            <div class="column_attr clearfix align_center">
-              <h2 style="color: white; text-align: center;">The rooms are well equipped and host an ambience of modern comforts, modern amenities and ensure a delightful experience throughout your stay.</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!--Cards-->
   <div class="container body-custom">
   <h2 class="prob_head m-4 text-center custom-heading">Amenities</h2>

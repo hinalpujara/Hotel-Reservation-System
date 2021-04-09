@@ -30,16 +30,17 @@
       </head>
     <body>
     <?php include "navbar/navbar.php"; ?>
-  <div style="background-color: white;">
+  <div style="background-color: white; padding-top:70px">
     <br>
     <div>
         <h1 style="font-style: italic; text-align: center;" >
             Types of Rooms and Amenities
         </h1>
     </div>
-    <br>
-    <br>
-    <div class="conainer">
+    <div class="section mcb-section dark  " style="padding-top:40px; padding-bottom:25px; background-color:#ffffff; background-image:url(http://hopp-inn.com/wp-content/uploads/2015/11/home_hotel2_subheader1.jpg); background-repeat:no-repeat; background-position:center; height:200px">
+    <h2 style="color: white; text-align: center;">The rooms are well equipped and host an ambience of modern comforts, modern amenities and ensure a delightful experience throughout your stay.</h2>
+  </div>
+    <div class="conainer" style="padding-top: 50px;">
       <div class="ml-4">
       <div class="sections_group">
         <div>
