@@ -25,18 +25,41 @@
       width: 100%;
       position: absolute;
     }
+
+    .vid{
+      width: auto;
+      height: 75%;
+    }
+
+    .image-resize{
+      height: 400px;
+      width: 600px;
+    }
+
+    .color{
+      padding-top: 5px;
+    }
+
+    .button-prop{
+      padding-top: 180px;
+      padding-left: 100px;
+    }
+
+    .custom-jumbotron{
+      height: 400px;
+    }
   </style>
 </head>
 
 <body>
   <?php include "navbar/navbar.php"; ?>
-
-  <div class="embed-responsive embed-responsive-16by9 ">
+  <div class="embed-responsive embed-responsive-16by9 vid" style="height: 600px; background-color: black">
     <video style="width:100%" autoplay muted>
       <source src="video/udr_video.mp4" type="video/mp4">
     </video>
     <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tsDbCKUyNSk" allowfullscreen style="padding-top: 70px;"></iframe> -->
   </div>
+
   <!-- cards-carousel -->
   <section class="pt-5 pb-5">
     <div class="container">
@@ -85,7 +108,6 @@
               </div>
               <div class="carousel-item">
                 <div class="row">
-
                   <div class="col-md-4 mb-3">
                     <div class="card">
                       <img class="img-fluid" alt="100%x280" src="https://www.fabhotels.com/blog/wp-content/uploads/2017/10/maharana-pratap.jpg" style="height:250px;">
@@ -135,12 +157,23 @@
     </div>
   </section>
 
-  <div >
-  <h3 style="text-align: center;">Click on the 'CAB' button to book a cab</h3>
-  <div style="padding-left:600px ;">
-    <button type="button" class="btn btn-success" onclick="document.location='https://www.uber.com/jp/en/ride/ubertaxi/'" style="background-color:#FADBD8;color:black;border:white;">CAB</button>
-    </div>
-  </div>
+      <div class="container">
+        <div class="jumbotron color custom-jumbotron">
+          <div class="row g-0">
+		        <div class="col-auto">
+              <img
+                src= "https://c.tenor.com/_nZik2r_0poAAAAj/oncoming-taxi-waiting-taxi.gif"
+                alt="..."
+                class="image-fluid image-resize"
+              />
+            </div>
+            <div class="col button-prop">
+              <button type="button" class="btn btn-outline-secondary btn-lg" onclick="document.location='https://www.uber.com/jp/en/ride/ubertaxi/'">Book a cab now!</button>
+            </div>
+		      </div>
+        </div>
+      </div>
+
   <!--Google map-->
   <div style="padding-top:30px;">
     <h2 style="text-align:center; padding-bottom:20px"><b><i> Here is The Map to help you find your Destination!!</i></b></h2>
