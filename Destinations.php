@@ -17,6 +17,8 @@
       position: relative;
       height: 0;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+    <?php include "navbar/navbarCSS.php"; ?>
 
     .map-container iframe {
       left: 0;
@@ -64,11 +66,11 @@
   <section class="pt-5 pb-5">
     <div class="container">
       <div class="row">
-        <h2 style="padding-left:420px;"><b><i> Some places to visit</i></b></h2>
+        <h2 style="padding-left:420px;"><b style="font-family: 'Merriweather', serif;"> Some places to visit</b></h2>
         <div class="col-12" style="padding-top:20px;">
           <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="font-family: 'Merriweather', serif;">
               <div class="carousel-item active">
                 <div class="row">
 
@@ -176,12 +178,12 @@
 
   <!--Google map-->
   <div style="padding-top:30px;">
-    <h2 style="text-align:center; padding-bottom:20px"><b><i> Here is The Map to help you find your Destination!!</i></b></h2>
+    <h2 style="text-align:center; padding-bottom:20px; font-family: 'Merriweather', serif;"> Here is The Map to help you find your Destination!!</h2>
     <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
       <iframe src="http://maps.google.com/maps?q=places+to+visit+in+udaipur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-  
+  <?php include "footer.php"; ?>
   < <!--Google Maps-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
