@@ -56,18 +56,18 @@
                   <p>These Deluxe Rooms let you relax as you admire a beautiful view of the garden.</p>
                   <p>Stay and enjoy as we provide the following Amenities for Deluxe room:</p>
                   <ul>
-                    <li>
-                      <b>WiFi</b>
-                    </li>
-                    <li>
-                      <b>Hair Dryer</b>
-                    </li>
-                    <li>
-                      <b>AC</b>
-                    </li>
-                    <li>
-                      <b>TV</b>
-                    </li>
+                  <li>
+                    WiFi
+                  </li>
+                  <li>
+                    Hair Dryer
+                  </li>
+                  <li>
+                    AC
+                  </li>
+                  <li>
+                    TV
+                  </li>
                   </ul>
                 </div>
               </td>
@@ -93,22 +93,22 @@
                 <p>Stay and enjoy as we provide the following Amenities for Premium room:</p>
                 <ul>
                   <li>
-                    <b>WiFi</b>
+                    WiFi
                   </li>
                   <li>
-                    <b>Hair Dryer</b>
+                    Hair Dryer
                   </li>
                   <li>
-                    <b>AC</b>
+                    AC
                   </li>
                   <li>
-                    <b>TV</b>
+                    TV
                   </li>
                   <li>
-                    <b>Breakfast</b>
+                    Breakfast
                   </li>
                   <li>
-                    <b>Cofee Machine</b>
+                    Cofee Machine
                   </li>
                 </ul>
               </div>
@@ -133,28 +133,28 @@
                 <p>Stay and enjoy as we provide the following Amenities for Luxury room:</p>
                 <ul>
                   <li>
-                    <b>WiFi</b>
+                    WiFi
                   </li>
                   <li>
-                    <b>Hair Dryer</b>
+                    Hair Dryer
                   </li>
                   <li>
-                    <b>AC</b>
+                    AC
                   </li>
                   <li>
-                    <b>TV</b>
+                    TV
                   </li>
                   <li>
-                    <b>Mini Fridge</b>
+                    Mini Fridge
                   </li>
                   <li>
-                    <b>Electronic safe</b>
+                    Electronic safe
                   </li>
                   <li>
-                    <b>Breakfast</b>
+                    Breakfast
                   </li>
                   <li>
-                    <b>Cofee Machine</b>
+                    Cofee Machine
                   </li>
                 </ul>
               </div>
@@ -170,7 +170,7 @@
   <div style="background-image: url(https://images.homify.com/c_fill,e_blur:500,f_auto,h_500,q_auto,w_1280/v1464689471/p/photo/image/1529500/Daughter_View01.jpg);height:200px">
     <div class="row">
       <div class="col text-center" style="padding-top: 70px;">
-      <h5>To book your room click on the 'BOOK NOW' button</>
+      <h5 style="font-family: 'Merriweather', serif;">To book your room click on the 'BOOK NOW' button</>
         <div style="padding-top: 10px;">
           <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
         </div>
