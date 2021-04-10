@@ -17,8 +17,8 @@
       </head>
       <body>
       <?php include "navbar/navbar.php"; ?>
-
-	<form action="user_login_validation.php" method="post">
+<div class="message"></div>
+	<form action="metry.php" method="post">
         <div class="login-box">
             <h1>USER LOGIN</h1>
             <div class="textbox">
@@ -37,7 +37,6 @@
                      name="login" value="Sign In">
         </div>
     </form>
-    <?php include "footer.php"; ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
