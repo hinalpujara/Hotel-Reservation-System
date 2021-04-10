@@ -54,7 +54,7 @@
                   <h2><b>Deluxe</b></h2>
 
                   <p>These Deluxe Rooms let you relax as you admire a beautiful view of the garden.</p>
-                  <p>Stay and enjoy as we provide the following Amenities for Deluxe room</p>
+                  <p>Stay and enjoy as we provide the following Amenities for Deluxe room:</p>
                   <ul>
                     <li>
                       <b>WiFi</b>
@@ -90,7 +90,7 @@
                 <h2><b>Premium</b></h2>
 
                 <p>Premium rooms are modern, spacious and artistically designed, and the comfortable furniture, as well as the tranquil and peaceful atmosphere will provide a pleasant vacation and the quiet needed to complete business tasks that take up a great amount of time.</p>
-                <p>Stay and enjoy as we provide the following Amenities for Premium room</p>
+                <p>Stay and enjoy as we provide the following Amenities for Premium room:</p>
                 <ul>
                   <li>
                     <b>WiFi</b>
@@ -130,7 +130,7 @@
                 <h2><b>Luxury</b></h2>
 
                 <p>These Luxury Rooms let you relax as you admire a beautiful view of the pool. It provides the best hospitality that probably you would have never enjoyed</p>
-                <p>Stay and enjoy as we provide the following Amenities for Luxury room</p>
+                <p>Stay and enjoy as we provide the following Amenities for Luxury room:</p>
                 <ul>
                   <li>
                     <b>WiFi</b>
@@ -170,7 +170,7 @@
   <div style="background-image: url(https://images.homify.com/c_fill,e_blur:500,f_auto,h_500,q_auto,w_1280/v1464689471/p/photo/image/1529500/Daughter_View01.jpg);height:200px">
     <div class="row">
       <div class="col text-center" style="padding-top: 70px;">
-      <h5>To book you room click on the 'BOOK NOW' button</>
+      <h5>To book your room click on the 'BOOK NOW' button</>
         <div style="padding-top: 10px;">
           <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
         </div>
