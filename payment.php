@@ -268,6 +268,7 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
         </div>
     </div>
 </div>
+<?php include "footer.php"; ?>
 <!-- Optional JavaScript -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
