@@ -17,6 +17,8 @@
       position: relative;
       height: 0;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+    <?php include "navbar/navbarCSS.php"; ?>
 
     .map-container iframe {
       left: 0;
@@ -41,11 +43,11 @@
   <section class="pt-5 pb-5">
     <div class="container">
       <div class="row">
-        <h2 style="padding-left:420px;"><b><i> Some places to visit</i></b></h2>
+        <h2 style="padding-left:420px;"><b style="font-family: 'Merriweather', serif;"> Some places to visit</b></h2>
         <div class="col-12" style="padding-top:20px;">
           <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="font-family: 'Merriweather', serif;">
               <div class="carousel-item active">
                 <div class="row">
 
@@ -135,15 +137,17 @@
     </div>
   </section>
 
-  <div >
-  <h3 style="text-align: center;">Click on the 'CAB' button to book a cab</h3>
+  <div style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRCSqqt1UesvmV0CqweUKS1RNc1K62WyOqig&usqp=CAU);height:170px">
+  <div style="padding-top: 50px;">
+  <h2 style="text-align: center;font-family: 'Merriweather', serif;"><b> Click on the 'CAB' button to book a cab</b></h2>
   <div style="padding-left:600px ;">
     <button type="button" class="btn btn-success" onclick="document.location='https://www.uber.com/jp/en/ride/ubertaxi/'" style="background-color:#FADBD8;color:black;border:white;">CAB</button>
+    </div>
     </div>
   </div>
   <!--Google map-->
   <div style="padding-top:30px;">
-    <h2 style="text-align:center; padding-bottom:20px"><b><i> Here is The Map to help you find your Destination!!</i></b></h2>
+    <h2 style="text-align:center; padding-bottom:20px; font-family: 'Merriweather', serif;"> Here is The Map to help you find your Destination!!</h2>
     <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
       <iframe src="http://maps.google.com/maps?q=places+to+visit+in+udaipur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
