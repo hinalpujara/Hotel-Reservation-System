@@ -167,10 +167,13 @@
   </div>
   <br>
   <br>
-  <div class="container">
+  <div style="background-image: url(https://images.homify.com/c_fill,e_blur:500,f_auto,h_500,q_auto,w_1280/v1464689471/p/photo/image/1529500/Daughter_View01.jpg);height:200px">
     <div class="row">
-      <div class="col text-center">
-        <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white">BOOK NOW</button>
+      <div class="col text-center" style="padding-top: 70px;">
+      <h5>To book you room click on the 'BOOK NOW' button</>
+        <div style="padding-top: 10px;">
+          <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+        </div>
       </div>
     </div>
   </div>
