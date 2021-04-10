@@ -16,7 +16,7 @@
   <title>Home-The Victoria</title>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <script src="https://kit.fontawesome.com/0493cbe504.js" crossorigin="anonymous"></script>
   <style type="text/css">
 
@@ -224,7 +224,7 @@ transform : scale(1.1);
     </div>
   </div>
 </div>
-<?php include "footer.php"; ?>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
