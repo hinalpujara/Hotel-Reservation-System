@@ -42,7 +42,7 @@ justify-content: space-around !important;
 }
 
 .mycard{
-translate : .5s ease-in-out !important;
+translate:.5s ease-in-out !important;
 box-shadow : 3px 3px #888888 !important;
 }
 
@@ -97,15 +97,15 @@ transform : scale(1.1);
   <?php include "navbar/navbar.php"; ?>
    <div >
   <img src="https://images.thrillophilia.com/image/upload/s--Obzo5CKX--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/053/295/original/1463646642_Udaipur_3.jpg.jpg" alt="Udaipur" style="width:100%; height: 600px;">
-  <div class="centered" style="margin-top: 200px;"><h1>Welcome to The Victoria</h1></div>
+  <div class="centered" style="margin-top: 200px;font-family: 'Mulish', sans-serif;text-shadow: 10px 15px 20px black;"><h1>Welcome to The Victoria</h1></div>
   <a class="btn" href="#Welcome">More about us</a>
 </div>
 
   <!-- welcome!! -->
-  <div class="jumbotron">
-  <div class="sections_group" style="padding-top:30px;" id="Welcome">
+  <div class="jumbotron" id="Welcome">
+  <div class="sections_group" style="padding-top:30px;" >
   
-    <table >
+    <table>
       <tr>
         <td>
           <div class="entry-content" itemprop="mainContentOfPage">
@@ -120,7 +120,7 @@ transform : scale(1.1);
                         </div>
                       </div>
         </td>
-        <td>
+        <td style="font-family: 'Mulish', sans-serif;">
           <div class="column mcb-column one-second column_column  column-margin-">
             <div class="column_attr clearfix align_left" style=" padding:20px;">
               <h5>Experience the best Hospitality</h5>
@@ -149,7 +149,8 @@ transform : scale(1.1);
               alt="..." />
             <div class="card-body">
             <h4 class="text-center">SPA</h4>
-              <p class="card-text card_p">Hunger kills more people each year than AIDS, malaria and terrorism combined
+              <p class="card-text card_p">
+              A day spa is a business that provides a variety of services for the purpose of improving health, beauty and relaxation through personal care treatments such as hair, massages and facials
               </p>
             </div>
           </div>
@@ -160,17 +161,20 @@ transform : scale(1.1);
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
             <h4 class="text-center">GYM</h4>
-              <p class="card-text card_p">Every 10 seconds, a child dies from hunger</p>
+              <p class="card-text card_p">
+              A gym is a club, building, or large room, usually containing special equipment, where people go to do physical exercise and get fit.</p>
             </div>
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
           <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
             <img
-              src="https://timesofindia.indiatimes.com/thumb/msid-71497463,imgsize-383337,width-400,resizemode-4/71497463.jpg"
+              src="https://i.pinimg.com/originals/8c/ab/a6/8caba665dff3a3f5479fa6da97b0c321.jpg"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
-              <p class="card-text card_p">82% of hungry people live in countries with food surpluses, not food shortages
+            <h4 class="text-center">Home Theater</h4>
+              <p class="card-text card_p">
+              Here in The Victoria, we have the best Home Theater System with comfortable recliner chairs to enjoy your favourite movie at anytime you want.
               </p>
             </div>
           </div>
@@ -184,28 +188,35 @@ transform : scale(1.1);
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
           <div class="card my-2  mycard shadow h-100" style="width: 18rem;">
             <img
-              src="https://ichef.bbci.co.uk/news/400/cpsprodpb/156EE/production/_113309778_gettyimages-524903696.jpg"
+              src="https://media-cdn.tripadvisor.com/media/photo-s/0b/21/96/69/video-gaming-room.jpg"
               class="card-img-top myimg " alt="..." />
             <div class="card-body">
-              <p class="card-text card_p">One in every eight people sleeps hungry each night</p>
+            <h4 class="text-center">Gaming Room</h4>
+              <p class="card-text card_p">
+              An evening full of games is not meant just for the kids. With pool, pingpong, darts and more, there are plenty of activities to keep all ages entertained.
+              </p>
             </div>
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
           <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
-            <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2017/08/29/980906-178891002.jpg?itok=ev1gSm8g"
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhrR3ek--h7m6N4pCd2rwffmUkJ8HxJ2rKw&usqp=CAU"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
-              <p class="card-text card_p">One-third of the food produced around the world is never consumed</p>
+            <h4 class="text-center">Swimming Pool</h4>
+              <p class="card-text card_p">After a long day of traveling or sightseeing, there’s nothing like a refreshing dip in the pool. If you’re looking to make a splash on your next vacation, we’ve rounded up the most exquisite pool in our Hotel</p>
             </div>
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
           <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
-            <img src="https://static.toiimg.com/thumb/msid-72523533,width-1200,height-900,resizemode-4/.jpg"
+            <img src="https://media-magazine.trivago.com/wp-content/uploads/2020/03/14091937/m-hotel-jacuzzi-champagne.jpg"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
-              <p class="card-text card_p">850 million hungry people in the world</p>
+            <h4 class="text-center">Jacuzzi</h4>
+              <p class="card-text card_p">
+              A hotel room with an in-room jacuzzi or hot tub is the ultimate in romantic luxury. These are some of the best for your next trip in 2021.
+              </p>
             </div>
           </div>
         </div>
