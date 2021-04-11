@@ -16,6 +16,7 @@
       <body>
       <?php include "navbar/navbar.php"; ?>
     <br>
+    <h2>Check-In a Customer:  <button type="button" class="btn btn-success" onclick="document.location='checkinform.php'" style="background-color:#FADBD8;color:black;border:white;">CHECK-IN</button></h2>
     <h2>Booking Data</h2>
           <?php
           $servername = "localhost";
@@ -232,56 +233,7 @@
                             }
                             $conn->close();
                             ?>
-                            <h2>Amenities</h2>
-                                  <?php
-                                  $servername = "localhost";
-                                  $username = "root";
-                                  $password = "";
-                                  $dbname = "hotel_management";
-                                  $conn = new mysqli($servername, $username, $password, $dbname);
-                                  $sql = "SELECT no, date_of_booking, premium_availability, deluxe_availability, luxury_availability FROM booking_date ";
-                                  $result = $conn->query($sql);
 
-                                  if ($result->num_rows > 0){
-                                  echo "
-                                    <div class='table-wrapper'>
-                                    <table class='fl-table'>
-                                    <tr>
-                                    <th>Sr.No</th>
-                                    <th>Date of booking</th>
-                                    <th>Premium Availability</th>
-                                    <th>Deluxe Availability</th>
-                                    <th>Luxury Availability</th>
-                                    </tr>";
-
-                                    while($row = $result->fetch_assoc()){
-                                      echo"
-                                          <tr>
-                                          <td>
-                                          " .$row["no"] . "
-                                          </td>
-                                          <td>
-                                          " . $row["date_of_booking"] . "
-                                          </td>
-                                          <td>
-                                          " . $row["premium_availability"] . "
-                                          </td>
-                                          <td>
-                                          " . $row["deluxe_availability"] . "
-                                          </td>
-                                          <td>
-                                          " . $row["luxury_availability"] . "
-                                          </td>
-                                          </tr>";
-                                    }
-                                    echo "</table>";
-                                    echo "</div>";
-                                  }
-                                  else{
-                                    echo "0 results";
-                                  }
-                                  $conn->close();
-                                  ?>
 
 
     <!-- Optional JavaScript -->

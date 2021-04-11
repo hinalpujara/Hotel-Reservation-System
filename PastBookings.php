@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+    
         body {
             color: #566787;
             background: #f5f5f5;
@@ -322,7 +323,7 @@
                         <th>Status</th>
                         <th>CheckIn Date</th>
                         <th>CheckOut Date</th>
-                        
+
                         <th>Net Amount</th>
                     </tr>
                 </thead>
