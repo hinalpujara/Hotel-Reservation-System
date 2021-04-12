@@ -1,8 +1,8 @@
 
+ <!DOCTYPE html>
+ <html lang="en">
 <header>
-  <?php
-  session_start();
-   ?>
+
         <nav class="navbar navbar-expand-lg navbar-light main-navigation" style="background-color: #FADBD8">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" width="200" height="50" class="d-inline-block align-center" alt="">
@@ -84,3 +84,4 @@
             </div>
         </div>
     </div>
+</html>

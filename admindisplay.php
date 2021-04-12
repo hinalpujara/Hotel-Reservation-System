@@ -17,6 +17,7 @@
       <?php include "navbar/navbar.php"; ?>
     <br>
     <h2>Check-In a Customer:  <button type="button" class="btn btn-success" onclick="document.location='checkinform.php'" style="background-color:#FADBD8;color:black;border:white;">CHECK-IN</button></h2>
+    <h2>Check Occupancy:  <button type="button" class="btn btn-success" onclick="document.location='search.php'" style="background-color:#FADBD8;color:black;border:white;">NEXT</button></h2>
     <h2>Booking Data</h2>
           <?php
           $servername = "localhost";

@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!doctype html>
 <html lang="en">
 
@@ -183,7 +186,7 @@
       <iframe src="http://maps.google.com/maps?q=places+to+visit+in+udaipur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-  
+
   < <!--Google Maps-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

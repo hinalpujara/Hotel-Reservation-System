@@ -1,6 +1,3 @@
-<?php
-  session_start();
- ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -218,7 +215,7 @@
               <div class="row">
                   <div class="booking-form">
                       <div class="form-header">
-                          <h1>Book Your Room</h1>
+                          <h1>Check Occupancy</h1>
                       </div>
                       <form action="bookingconnection.php" method="post">
 
@@ -226,49 +223,16 @@
                               <div class="col-md-6">
                                   <div class="form-group">
                                     <input class="form-control" type="date" name="checkin" required>
-                                    <span class="form-label">Check In</span>
+                                    <span class="form-label">Check In Date</span>
                                   </div>
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <input class="form-control" type="date" name="checkout" required>
-                                    <span class="form-label">Check out</span>
+                                    <div class="form-btn"> <button class="submit-btn" href="payment.php">Check</button> </div>
                                   </div>
                               </div>
                           </div>
-                          <div class="row">
-                              <div class="col-md-4">
-                                  <div class="form-group">
-                                    <select name="rooms" class="form-control" required>
-                                          <option value="" selected hidden>No of Rooms</option>
-                                          <option>1</option>
-                                          <option>2</option>
-                                          <option>3</option>
-                                      </select>
-                                      <span class="select-arrow"></span> <span class="form-label">Rooms</span>
-                                    </div>
-                              </div>
-                              <div class="col-md-4">
-                                  <div class="form-group">
-                                    <select name="type" class="form-control" required>
-                                          <option value="" selected hidden >Room Type</option>
-                                          <option>Premium</option>
-                                          <option>Deluxe</option>
-                                          <option>Luxury</option>
-                                      </select>
-                                      <span class="select-arrow"></span> <span class="form-label">Room Type</span>
-                                    </div>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                                    <span class="form-label">Email</span>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="form-btn"> <button class="submit-btn" href="payment.php">Book Now</button> </div>
+
                       </form>
                   </div>
               </div>
