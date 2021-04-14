@@ -3,6 +3,12 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="display.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -215,15 +221,14 @@
               <div class="row">
                   <div class="booking-form">
                       <div class="form-header">
-                          <h1>Check Occupancy</h1>
+                          <h1>Room Number</h1>
                       </div>
-                      <form action="bookingconnection.php" method="post">
-
+                      <form method="post" action="<?=$_SERVER['PHP_SELF'];?>">
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <input class="form-control" type="date" name="checkin" required>
-                                    <span class="form-label">Check In Date</span>
+                                    <input class="form-control" type="number" placeholder="Enter Room Number" name="room_number" value='<?php $num?>' required>
+                                    <span class="form-label">Room Number</span>
                                   </div>
                               </div>
                               <div class="col-md-6">
@@ -232,13 +237,77 @@
                                   </div>
                               </div>
                           </div>
-
                       </form>
                   </div>
               </div>
           </div>
       </div>
   </div>
+  <?php
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "hotel_management";
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  echo "Connected successfully";
+  $sql = "SELECT * FROM booking_data
+  WHERE $num = room_number";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0){
+  echo "
+    <div class='table-wrapper'>
+    <table class='fl-table'>
+    <tr>
+    <th>Sr.No</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Contact Number</th>
+    <th>Credit Card Number</th>
+    <th>Room Number</th>
+    <th>Room Type</th>
+    <th>Number of Rooms</th>
+    </tr>";
+
+    while($row = $result->fetch_assoc()){
+      echo"
+          <tr>
+          <td>
+          " .$row["booking_id"] . "
+          </td>
+          <td>
+          " . $row["email"] . "
+          </td>
+          <td>
+          " . $row["checkin"] . "
+          </td>
+          <td>
+          " . $row["checkout"] . "
+          </td>
+          <td>
+          " . $row["room_type"] . "
+          </td>
+          <td>
+          " . $row["no_of_rooms"] . "
+          </td>
+          </tr>";
+    }
+    echo "</table>";
+    echo "</div>";
+  }
+  else{
+    echo "0 results";
+  }
+
+  $conn->close();
+
+  ?>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

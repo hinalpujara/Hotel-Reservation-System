@@ -1,7 +1,7 @@
 <?php
 
 include_once('connection.php');
-
+session_start();
 function test_input($data) {
 
     $data = trim($data);
@@ -22,7 +22,8 @@ if ($_SERVER["REQUEST_METHOD"]== "POST") {
 
         if(($user['adminname'] == $adminname) &&
             ($user['password'] == $password)) {
-                header("Location: admindisplay.php");
+              $_SESSION["adminname"] = $user["adminname"];
+              header("Location: admindisplay.php");
         }
     }
         echo "<script language='javascript'>";

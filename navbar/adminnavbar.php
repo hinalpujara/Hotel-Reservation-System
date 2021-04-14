@@ -13,21 +13,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active pl-3">
-            <a class="nav-link" href="index.php"><b>Home</b> <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="admindisplay.php"><b>Hotel Data</b><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item pl-3">
-            <a class="nav-link" href="Destinations.php" style="color: black;"><b>Destinations</b> </span></a>
+            <a class="nav-link" href="checkinform.php" style="color: black;"><b>Check-In</b></span></a>
           </li>
           <li class="nav-item pl-3">
-            <a class="nav-link" href="rooms.php" style="color: black;"><b>Rooms</b> </span></a>
+            <a class="nav-link" href="checkout.php" style="color: black;"><b>Check-Out</b></span></a>
           </li>
           <li class="nav-item pl-3">
-            <a class="nav-link" href="contactus.php" style="color: black;"><b>Contact Us</b></a>
+            <a class="nav-link" href="search.php" style="color: black;"><b>Search</b></a>
           </li>
         </ul>
         <ul class='navbar-nav ml-auto'>
         <?php
-          if(isset($_SESSION["first_name"]))
+          if(isset($_SESSION["adminname"]))
           {
             echo "<li class='nav-item dropdown'>";
             echo "<a class='nav-link' href='logout.php' style='color: black;'><b>Logout</b></a>";

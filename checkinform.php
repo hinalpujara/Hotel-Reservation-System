@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,7 +17,7 @@
     </style>
       </head>
       <body>
-      <?php include "navbar/navbar.php"; ?>
+      <?php include "navbar/adminnavbar.php"; ?>
     <div class="container">
     <div class="jumbotron" style="background-color: white;" >
      <img src="images/lug.png" alt="Maxwell Admin" class="mx-auto d-block img-fluid unlock-icon pt-5" style="height: 200px;">
