@@ -21,7 +21,7 @@
     <div class="container">
     <div class="jumbotron" style="background-color: white;" >
      <img src="images/lug.png" alt="Maxwell Admin" class="mx-auto d-block img-fluid unlock-icon pt-5" style="height: 200px;">
-        <form action="registrationdata.php" method="POST">
+        <form action="checkinconn.php" method="POST">
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Customer Check-In</legend>
                 <div class="row">
@@ -54,7 +54,7 @@
                 <div class="row">
                   <div class="col">
                       <label>Room No.</label>
-                      <input type="text" class="form-control" placeholder="Enter first name" name="fname">
+                      <input type="text" class="form-control" placeholder="Enter first name" name="room_number">
                   </div>
                   <div class="row">
                     <div class="col">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col">
                         <label>Check-Out Date</label>
-                        <input class="form-control" type="date" name="checkin" required >
+                        <input class="form-control" type="date" name="checkout" required >
                     </div>
                   </div>
                   <div class="col">

@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -212,7 +215,7 @@
     <title>The Victoria</title>
       </head>
       <body>
-      <?php include "navbar/navbar.php"; ?>
+      <?php include "navbar/adminnavbar.php"; ?>
       <br>
       <br>
     <div id="booking" class="section">
@@ -223,17 +226,22 @@
                       <div class="form-header">
                           <h1>Room Number</h1>
                       </div>
+                      <?php
+                          if (isset($_POST['submit'])) {
+                            $num = $_POST['room_number'];
+                          }
+                        ?>
                       <form method="post" action="<?=$_SERVER['PHP_SELF'];?>">
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <input class="form-control" type="number" placeholder="Enter Room Number" name="room_number" value='<?php $num?>' required>
+                                    <input class="form-control" type="number" placeholder="Enter Room Number" name="room_number" required>
                                     <span class="form-label">Room Number</span>
                                   </div>
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <div class="form-btn"> <button class="submit-btn" href="payment.php">Check</button> </div>
+                                    <div class="form-btn"> <button name = "submit" class="submit-btn" href="payment.php">Check</button> </div>
                                   </div>
                               </div>
                           </div>
@@ -254,8 +262,7 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully";
-  $sql = "SELECT * FROM booking_data
+  $sql = "SELECT * FROM occupancy
   WHERE $num = room_number";
   $result = $conn->query($sql);
   if ($result->num_rows > 0){
@@ -263,37 +270,38 @@
     <div class='table-wrapper'>
     <table class='fl-table'>
     <tr>
-    <th>Sr.No</th>
     <th>First Name</th>
     <th>Last Name</th>
     <th>Email</th>
     <th>Contact Number</th>
-    <th>Credit Card Number</th>
     <th>Room Number</th>
-    <th>Room Type</th>
-    <th>Number of Rooms</th>
+    <th>Check-In</th>
+    <th>Check-Out</th>
     </tr>";
 
     while($row = $result->fetch_assoc()){
       echo"
           <tr>
           <td>
-          " .$row["booking_id"] . "
+          " .$row["firstname"] . "
+          </td>
+          <td>
+          " . $row["lastname"] . "
           </td>
           <td>
           " . $row["email"] . "
           </td>
           <td>
-          " . $row["checkin"] . "
+          " . $row["contact_number"] . "
           </td>
           <td>
-          " . $row["checkout"] . "
+          " . $row["room_number"] . "
           </td>
           <td>
-          " . $row["room_type"] . "
+          " . $row["check_in"] . "
           </td>
           <td>
-          " . $row["no_of_rooms"] . "
+          " . $row["check_out"] . "
           </td>
           </tr>";
     }
