@@ -240,28 +240,28 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <div class="input-group"> <input type="text" name="Name" placeholder="John Doe"> <label>Name</label> </div>
+                            <div class="input-group"> <input type="text" name="Name" placeholder="John Doe" required> <label>Name</label> </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <div class="input-group"> <input type="text" id="cr_no" name="card-no" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19"> <label>Card Number</label> </div>
+                            <div class="input-group"> <input type="text" id="cr_no" name="card-no" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19" required> <label>Card Number</label> </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-6">
-                                    <div class="input-group"> <input type="text" id="exp" name="expdate" placeholder="MM/YY" minlength="5" maxlength="5"> <label>Expiry Date</label> </div>
+                                    <div class="input-group"> <input type="text" id="exp" name="expdate" placeholder="MM/YY" minlength="5" maxlength="5" required> <label>Expiry Date</label> </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="input-group"> <input type="password" name="cvv" placeholder="&#9679;&#9679;&#9679;" minlength="3" maxlength="3"> <label>CVV</label> </div>
+                                    <div class="input-group"> <input type="password" name="cvv" placeholder="&#9679;&#9679;&#9679;" minlength="3" maxlength="3" required> <label>CVV</label> </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-md-12"> <input type="submit" value="Pay 100 EUR" class="btn btn-pay placeicon"> </div>
+                        <div class="col-md-12"> <input type="submit" value="Pay" class="btn btn-pay placeicon"> </div>
                     </div>
                 </form>
             </div>
