@@ -73,24 +73,24 @@
       <div class="row">
         <div class="col">
           <label>First name</label>
-          <input type="text" class="form-control" placeholder="Enter first name" name="fname">
+          <input type="text" class="form-control" placeholder="Enter first name" name="fname" required>
         </div>
         <div class="col">
           <label>Last name</label>
-          <input type="text" class="form-control" placeholder="Enter last name" name="lname">
+          <input type="text" class="form-control" placeholder="Enter last name" name="lname" required>
         </div>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
       </div>
       <div class="form-group">
         <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity" placeholder="Enter city" name="city">
+        <input type="text" class="form-control" id="inputCity" placeholder="Enter city" name="city" required>
       </div>
       <div class="form-group">
         <label for="inputMessage">Message</label>
-        <input type="text" class="form-control" id="inputMessage" placeholder="Write your message here..." name="message">
+        <input type="text" class="form-control" id="inputMessage" placeholder="Write your message here..." name="message" required>
       </div>
       <div class="text-center">
         <button type="submit" class="btn custom-btn" href="contactus.php">Send a message</button>

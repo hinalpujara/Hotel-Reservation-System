@@ -24,32 +24,34 @@
                 <div class="row">
                   <div class="col">
                       <label>First name</label>
-                      <input type="text" class="form-control" placeholder="Enter first name" name="fname">
+                      <input type="text" class="form-control" placeholder="Enter first name" name="fname" required>
                   </div>
                   <div class="col">
                       <label>Last name</label>
-                      <input type="text" class="form-control" placeholder="Enter last name" name="lname">
+                      <input type="text" class="form-control" placeholder="Enter last name" name="lname" required>
                   </div>
                 </div>
                 <div class="form-group">
                     <br>
                   <label for="contact">Phone number</label>
-                  <input type="text" class="form-control" id="contact" aria-describedby="phoneHelp" name="contactno" placeholder="Enter phone number">
+                  <input type="text" class="form-control" id="contact" aria-describedby="phoneHelp" name="contactno" placeholder="Enter phone number" required>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
                 </div>
                 <label for="inputPassword5">Password</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password">
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password" required>
                 <small id="passwordHelpBlock" class="form-text text-muted">
-                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  
+                  <ul>
+                  <li>Your password must be 8-20 characters long</li>
+                  <li>Your password must contain atleast one uppercase letter,lowercase letter and number</li>
+                  <li>Your password must not contain spaces, special characters, or emoji</li>
+                  </ul> 
                 </small>
                 <label for="inputPassword5"> Re-enter Password</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password_reenter">
-                <small id="passwordHelpBlock" class="form-text text-muted">
-                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                </small>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password_reenter" required>
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Sign Up</button>
