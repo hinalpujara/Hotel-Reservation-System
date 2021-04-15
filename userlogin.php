@@ -35,6 +35,9 @@
 
             <input class="button" type="submit"
                      name="login" value="Sign In">
+            <div>
+              <p>Not registered?<a href="register.php"> Register Now</a></p>
+            </div>
         </div>
     </form>
     <!-- Optional JavaScript -->
