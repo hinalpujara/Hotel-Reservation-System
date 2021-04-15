@@ -68,6 +68,7 @@
 
                   <p>These Deluxe Rooms let you relax as you admire a beautiful view of the garden.</p>
                   <p>Stay and enjoy as we provide the following Amenities for Deluxe room:</p>
+                  <h4>Price: 7500/-</h4>
                   <div class="container">
                   <div class="row">
                     <div class="col-sm">
@@ -118,6 +119,7 @@
 
                 <p>Premium rooms are modern, spacious and artistically designed, and the comfortable furniture, as well as the tranquil and peaceful atmosphere will provide a pleasant vacation and the quiet needed to complete business tasks that take up a great amount of time.</p>
                 <p>Stay and enjoy as we provide the following Amenities for Premium room:</p>
+                <h4>Price: 10000/-</h4>
 
                 <div class="container">
                   <div class="row">
@@ -178,6 +180,7 @@
 
                 <p>These Luxury Rooms let you relax as you admire a beautiful view of the pool. It provides the best hospitality that probably you would have never enjoyed</p>
                 <p>Stay and enjoy as we provide the following Amenities for Luxury room:</p>
+                <h4>Price: 15000/-</h4>
                 <div class="container">
                   <div class="row">
                     <div class="col-sm">

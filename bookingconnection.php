@@ -12,6 +12,19 @@ $_SESSION["b"]=$_POST['email'];
 $_SESSION["d"]="Premium";
 $_SESSION["e"]="Deluxe";
 $_SESSION["f"]="Luxury";
+
+if($_SESSION["a"] == $_SESSION["d"])
+{
+  $_SESSION["price"] = 7500*$_SESSION["z"];
+}
+if($_SESSION["a"] == $_SESSION["e"])
+{
+  $_SESSION["price"] = 10000*$_SESSION["z"];
+}
+if($_SESSION["a"] == $_SESSION["f"])
+{
+  $_SESSION["price"] = 15000*$_SESSION["z"];
+}
 $servername = "localhost";
 $username = "root";
 $password = "";

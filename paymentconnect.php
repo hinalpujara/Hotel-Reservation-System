@@ -20,9 +20,10 @@ $b =  $_SESSION["b"];
 $d =  $_SESSION["d"];
 $e =  $_SESSION["e"];
 $f =  $_SESSION["f"];
+$g = $_SESSION["price"];
 echo "Connected successfully";
-$sql1 = "INSERT INTO booking_data (checkin, checkout, no_of_rooms, room_type, email)
- VALUES ('$x','$y','$z','$a','$b')";
+$sql1 = "INSERT INTO booking_data (checkin, checkout, no_of_rooms, room_type, email, price)
+ VALUES ('$x','$y','$z','$a','$b',$g)";
  if ($conn->query($sql1) === TRUE){
  	echo "\nNew record created successfully";
    #header("Location: payment.php");
