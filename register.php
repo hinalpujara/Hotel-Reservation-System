@@ -32,20 +32,21 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <br>
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                </div>
-                <div class="form-group">
+                    <br>
                   <label for="contact">Phone number</label>
                   <input type="text" class="form-control" id="contact" aria-describedby="phoneHelp" name="contactno" placeholder="Enter phone number">
                 </div>
                 <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username">
-              </div>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                </div>
                 <label for="inputPassword5">Password</label>
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+                <label for="inputPassword5"> Re-enter Password</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password_reenter">
                 <small id="passwordHelpBlock" class="form-text text-muted">
                   Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                 </small>
@@ -59,7 +60,7 @@
         </div>
     </div>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
