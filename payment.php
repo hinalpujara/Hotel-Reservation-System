@@ -11,7 +11,7 @@
     <title>Payment-The Victoria</title>
     <style type="text/css">
         <?php include "navbar/navbarCSS.php"; ?>
-        
+
         .column {
             float: left;
             width:33.33%;
@@ -217,7 +217,7 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
                         <h2 class="heading text-center">PAYMENT</h2>
                     </div>
                 </div>
-                <form class="form-card">
+                <form action="paymentconnect.php"  class="form-card">
                     <div class="row justify-content-center mb-4 radio-group">
                         <div class="col-sm-3 col-5">
                             <div class='radio selected mx-auto' data-value="dk"> <img class="fit-image" src="https://i.imgur.com/5TqiRQV.jpg" width="105px" height="55px"> </div>
