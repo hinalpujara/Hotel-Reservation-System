@@ -20,7 +20,6 @@
             font-family: 'Varela Round', sans-serif;
             font-size: 13px;
         }
-
         .table-wrapper {
             background: #fff;
             padding: 20px 25px;
@@ -28,7 +27,6 @@
             border-radius: 3px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
         }
-
         .table-wrapper .btn {
             float: right;
             color: #333;
@@ -38,60 +36,49 @@
             outline: none !important;
             margin-left: 10px;
         }
-
         .table-wrapper .btn:hover {
             color: #333;
             background: #f2f2f2;
         }
-
         .table-wrapper .btn.btn-primary {
             color: #fff;
             background: #03A9F4;
         }
-
         .table-wrapper .btn.btn-primary:hover {
             background: #03a3e7;
         }
-
         .table-title .btn {
             font-size: 13px;
             border: none;
         }
-
         .table-title .btn i {
             float: left;
             font-size: 21px;
             margin-right: 5px;
         }
-
         .table-title .btn span {
             float: left;
             margin-top: 2px;
         }
-
         .table-title {
             color: #fff;
-            background: #404040;
+            background: #4b5366;
             padding: 16px 25px;
             margin: -20px -25px 10px;
             border-radius: 3px 3px 0 0;
         }
-
         .table-title h2 {
             margin: 5px 0 0;
             font-size: 24px;
         }
-
         .show-entries select.form-control {
             width: 60px;
             margin: 0 5px;
         }
-
         .table-filter .filter-group {
             float: right;
             margin-left: 15px;
         }
-
         .table-filter input,
         .table-filter select {
             height: 34px;
@@ -99,87 +86,70 @@
             border-color: #ddd;
             box-shadow: none;
         }
-
         .table-filter {
             padding: 5px 0 15px;
             border-bottom: 1px solid #e9e9e9;
             margin-bottom: 5px;
         }
-
         .table-filter .btn {
             height: 34px;
         }
-
         .table-filter label {
             font-weight: normal;
             margin-left: 10px;
         }
-
         .table-filter select,
         .table-filter input {
             display: inline-block;
             margin-left: 5px;
         }
-
         .table-filter input {
             width: 200px;
             display: inline-block;
         }
-
         .filter-group select.form-control {
             width: 110px;
         }
-
         .filter-icon {
             float: right;
             margin-top: 7px;
         }
-
         .filter-icon i {
             font-size: 18px;
             opacity: 0.7;
         }
-
         table.table tr th,
         table.table tr td {
             border-color: #e9e9e9;
             padding: 12px 15px;
             vertical-align: middle;
         }
-
         table.table tr th:first-child {
             width: 60px;
         }
-
         table.table tr th:last-child {
             width: 80px;
         }
-
         table.table-striped tbody tr:nth-of-type(odd) {
             background-color: #fcfcfc;
         }
-
         table.table-striped.table-hover tbody tr:hover {
             background: #f5f5f5;
         }
-
         table.table th i {
             font-size: 13px;
             margin: 0 5px;
             cursor: pointer;
         }
-
         table.table td a {
             font-weight: bold;
             color: #566787;
             display: inline-block;
             text-decoration: none;
         }
-
         table.table td a:hover {
             color: #2196F3;
         }
-
         table.table td a.view {
             width: 30px;
             height: 30px;
@@ -188,18 +158,15 @@
             border-radius: 30px;
             text-align: center;
         }
-
         table.table td a.view i {
             font-size: 22px;
             margin: 2px 0 0 1px;
         }
-
         table.table .avatar {
             border-radius: 50%;
             vertical-align: middle;
             margin-right: 10px;
         }
-
         .status {
             font-size: 30px;
             margin: 2px 2px 0 0;
@@ -207,28 +174,22 @@
             vertical-align: middle;
             line-height: 10px;
         }
-
         .text-success {
             color: #10c469;
         }
-
         .text-info {
             color: #62c9e8;
         }
-
         .text-warning {
             color: #FFC107;
         }
-
         .text-danger {
             color: #ff5b5b;
         }
-
         .pagination {
             float: right;
             margin: 0 0 5px;
         }
-
         .pagination li a {
             border: none;
             font-size: 13px;
@@ -241,28 +202,22 @@
             text-align: center;
             padding: 0 6px;
         }
-
         .pagination li a:hover {
             color: #666;
         }
-
         .pagination li.active a {
             background: #03A9F4;
         }
-
         .pagination li.active a:hover {
             background: #0397d6;
         }
-
         .pagination li.disabled i {
             color: #ccc;
         }
-
         .pagination li i {
             font-size: 16px;
             padding-top: 6px
         }
-
         .hint-text {
             float: left;
             margin-top: 10px;
@@ -270,13 +225,11 @@
         }
         <?php include "navbar/navbarCSS.php"; ?>
     </style>
-
 </head>
-
 <body>
 <?php include "navbar/navbar.php"; ?>
-<div>
-    <div class="container custom-body" style="color: black;">
+<div class="custom-body" style="padding-top: 100px;">
+    <div class="container" style="color: black;">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
@@ -325,7 +278,6 @@
                         <th>Status</th>
                         <th>CheckIn Date</th>
                         <th>CheckOut Date</th>
-
                         <th>Net Amount</th>
                     </tr>
                 </thead>
@@ -372,12 +324,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
