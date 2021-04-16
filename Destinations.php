@@ -181,7 +181,7 @@
 
   <!--Google map-->
   <div style="padding-top:30px;">
-    <h2 style="text-align:center; padding-bottom:20px; font-family: 'Merriweather', serif;"> Here is The Map to help you find your Destination!!</h2>
+    <h2 style="text-align:center; font-family: 'Merriweather', serif;"> Here is The Map to help you find your Destination!!</h2>
     <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
       <iframe src="http://maps.google.com/maps?q=places+to+visit+in+udaipur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>

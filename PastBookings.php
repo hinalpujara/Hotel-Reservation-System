@@ -282,6 +282,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                <!-- for loop -->
                     <tr>
                         <td>1</td>
                         <td>Jun 15, 2017</td>
@@ -290,7 +291,7 @@
                         <th>CheckOut Date</th>
                         <td>$254</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td>2</td>
                         <td>Jun 15, 2017</td>
                         <td><span class="status text-success">&bull;</span> Booked</td>
@@ -321,7 +322,7 @@
                         <th>CheckIn Date</th>
                         <th>CheckOut Date</th>
                         <td>$254</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
     </div>

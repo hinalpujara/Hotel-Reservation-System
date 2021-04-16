@@ -10,12 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
 
   <title>Home-The Victoria</title>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -25,7 +20,6 @@
   <style type="text/css">
 
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
 
@@ -47,7 +41,7 @@ justify-content: space-around !important;
 
 .mycard{
 translate:.5s ease-in-out !important;
-box-shadow : 3px 3px #888888 !important;
+box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .mycard:hover{
@@ -148,7 +142,7 @@ transform : scale(1.1);
     <div class="col-10 mx-auto">
       <div class="row myrow pb-4">
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
-          <div class="card my-2  mycard shadow h-100" style="width: 18rem;">
+          <div class="card my-2 mycard h-100" style="width: 18rem;">
             <img src="https://img4.nbstatic.in/tr:w-500/577b59244cedfd000e025075.jpg" class="card-img-top myimg"
               alt="..." />
             <div class="card-body">
@@ -160,7 +154,7 @@ transform : scale(1.1);
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
-          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+          <div class="card my-2 mycard h-100" style="width: 18rem;">
             <img src="https://images.theconversation.com/files/339674/original/file-20200604-130929-iutdtd.jpg?ixlib=rb-1.1.0&rect=8%2C0%2C5455%2C3637&q=45&auto=format&w=496&fit=clip"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
@@ -171,7 +165,7 @@ transform : scale(1.1);
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
-          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+          <div class="card my-2 mycard h-100" style="width: 18rem;">
             <img
               src="https://i.pinimg.com/originals/8c/ab/a6/8caba665dff3a3f5479fa6da97b0c321.jpg"
               class="card-img-top myimg" alt="..." />
@@ -190,7 +184,7 @@ transform : scale(1.1);
     <div class="col-10 mx-auto">
       <div class="row myrow">
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center">
-          <div class="card my-2  mycard shadow h-100" style="width: 18rem;">
+          <div class="card my-2 mycard h-100" style="width: 18rem;">
             <img
               src="https://media-cdn.tripadvisor.com/media/photo-s/0b/21/96/69/video-gaming-room.jpg"
               class="card-img-top myimg " alt="..." />
@@ -203,7 +197,7 @@ transform : scale(1.1);
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
-          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+          <div class="card my-2 mycard h-100" style="width: 18rem;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhrR3ek--h7m6N4pCd2rwffmUkJ8HxJ2rKw&usqp=CAU"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
@@ -213,7 +207,7 @@ transform : scale(1.1);
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex justify-content-center ml-3 mr-3">
-          <div class="card my-2 mycard shadow h-100" style="width: 18rem;">
+          <div class="card my-2 mycard p-3 mb-5 bg-white rounded h-100" style="width: 18rem;">
             <img src="https://media-magazine.trivago.com/wp-content/uploads/2020/03/14091937/m-hotel-jacuzzi-champagne.jpg"
               class="card-img-top myimg" alt="..." />
             <div class="card-body">
@@ -225,7 +219,7 @@ transform : scale(1.1);
           </div>
         </div>
       </div>
-    </div>
+      </div>
   </div>
 </div>
 
