@@ -45,7 +45,7 @@
 <body>
   <?php include "navbar/navbar.php"; ?>
   <div style="background-color: white; padding-top:50pxpx">
-    <div class="section mcb-section dark  " style="padding-top:40px; padding-bottom:25px; background-color:#ffffff; background-image:url(http://hopp-inn.com/wp-content/uploads/2015/11/home_hotel2_subheader1.jpg); background-repeat:no-repeat; background-position:center; height:200px">
+    <div class="section mcb-section dark  " style="padding-top:60px; padding-bottom:25px; background-color:#ffffff; background-image:url(http://hopp-inn.com/wp-content/uploads/2015/11/home_hotel2_subheader1.jpg); background-repeat:no-repeat; background-position:center; height:200px">
       <h1 style="color: white; text-align: center;padding-top:35px; font-family:cursuive; font-style:italic">Types of Rooms and Amenities</h1>
     </div>
     <div style="text-align: center; padding-top:30px">
