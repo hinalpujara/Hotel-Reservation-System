@@ -82,18 +82,16 @@
                   </div>
                   <div class="row" style="padding-top: 20px;">
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          AC
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn0.iconfinder.com/data/icons/smart-home-31/68/Ac_air_air_conditioner_conditioner_icon-512.png" width="40" height="45">
+                      </span>
+                      <span>AC</span>
                     </div>
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          Hair Dryer
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn1.iconfinder.com/data/icons/appliance-1/100/dryer-03-512.png" width="40" height="45">
+                      </span>
+                      <span>Hair Dryer</span>
                     </div>
                   </div>
                 </div>
@@ -144,18 +142,16 @@
                   </div>
                   <div class="row" style="padding-top: 20px;">
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          AC
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn0.iconfinder.com/data/icons/smart-home-31/68/Ac_air_air_conditioner_conditioner_icon-512.png" width="40" height="45">
+                      </span>
+                      <span>AC</span>
                     </div>
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          Hair Dryer
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn1.iconfinder.com/data/icons/appliance-1/100/dryer-03-512.png" width="40" height="45">
+                      </span>
+                      <span>Hair Dryer</span>
                     </div>
                   </div>
                 </div>
@@ -204,34 +200,30 @@
                   </div>
                   <div class="row" style="padding-top: 20px;">
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          Mini Refrigerator
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/refrigerator-192-1158827.png" width="40" height="45">
+                      </span>
+                      <span>Mini Refrigerator</span>
                     </div>
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          Electronic Safe
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn3.iconfinder.com/data/icons/electronics-4-5/512/196-512.png" width="40" height="45">
+                      </span>
+                      <span>Electronic Safe</span>
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="row" style="padding-top: 20px;">
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          AC
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn0.iconfinder.com/data/icons/smart-home-31/68/Ac_air_air_conditioner_conditioner_icon-512.png" width="40" height="45">
+                      </span>
+                      <span>AC</span>
                     </div>
                     <div class="col-sm">
-                      <ul>
-                        <li>
-                          Hair Dryer
-                        </li>
-                      </ul>
+                      <span style="padding-right: 20px;">
+                      <img src="https://cdn1.iconfinder.com/data/icons/appliance-1/100/dryer-03-512.png" width="40" height="45">
+                      </span>
+                      <span>Hair Dryer</span>
                     </div>
                   </div>
                 </div>
