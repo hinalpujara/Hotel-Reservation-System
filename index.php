@@ -2,7 +2,7 @@
   session_start();
  ?>
 <!doctype html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
   <!-- Required meta tags -->
