@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Contact Us-The Victoria</title>
+    <title>Register User</title>
     <style type="text/css">
         <?php include "navbar/navbarCSS.php"; ?>
     </style>
@@ -40,7 +40,7 @@
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
                 </div>
-                <label for="inputPassword5">Password</label>
+                <label for="password">Password</label>
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password" required>
                 <small id="passwordHelpBlock" class="form-text text-muted">
                   
@@ -50,11 +50,11 @@
                   <li>Your password must not contain spaces, special characters, or emoji</li>
                   </ul> 
                 </small>
-                <label for="inputPassword5"> Re-enter Password</label>
+                <label for="passwordConfirm"> Re-enter Password</label>
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Enter password" name="password_reenter" required>
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+                <button class="btn btn-outline-info" type="submit" id="submit" name="submit">Sign Up</button>
             </div>
         </form>
         <div class="border-top pt-3">
