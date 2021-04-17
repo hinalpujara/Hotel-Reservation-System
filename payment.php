@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -217,20 +220,30 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
     <body>
     <?php include "navbar/navbar.php"; ?>
     <!-- summary -->
-    <div class="container" style="padding-left:247px">
-    <div class="col-25 d-flex justify-content-center" style="padding-top:100px;width:645px" >
-    <div class="container jumbotron">
-      <h4 style="padding-bottom: 20px;"> <span>Summary</span> 
-        <span class="price" style="color:black;">
+    <?php
+    $b =  $_SESSION["b"];
+    $z =  $_SESSION["z"];
+    $a =  $_SESSION["a"];
+    $g = $_SESSION["price"];
+    $premium = $_SESSION["premium"];
+    $deluxe = $_SESSION["deluxe"];
+    $lux = $_SESSION["luxury"];
+
+  echo"  <div class='container' style='padding-left:247px'>
+    <div class='col-25 d-flex justify-content-center' style='padding-top:100px;width:645px' >
+    <div class='container jumbotron'>
+      <h4 style='padding-bottom: 20px;'> <span>Summary</span>
+        <span class='price' style='color:black;'>
           Price
         </span>
       </h4>
-      <p><span >Product 1</span> <span class="price">15000RS</span></p>
+      <p><span >" .$a." - " .$z." rooms</span> <span class='price'>₹" .$g."</span></p>
       <hr>
-      <p>Total <span class="price" style="color:black"><b>15000RS</b></span></p>
+      <p>Total <span class='price' style='color:black'><b>₹" .$g."</b></span></p>
     </div>
   </div>
-  </div>
+  </div>";
+  ?>
   <!-- summary... -->
   <!-- payment -->
   <div class="container-fluid">
