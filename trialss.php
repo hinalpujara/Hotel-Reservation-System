@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -123,76 +126,114 @@
         </div>
         <hr>
     </div>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "hotel_management";
 
-		<div class="invoice-box">
-			<table cellpadding="0" cellspacing="0">
-				<tr class="top">
-					<td colspan="2">
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}
+$b =  $_SESSION["b"];
+$z =  $_SESSION["z"];
+$a =  $_SESSION["a"];
+$g = $_SESSION["price"];
+$premium = $_SESSION["premium"];
+$deluxe = $_SESSION["deluxe"];
+$lux = $_SESSION["luxury"];
+$sql = "SELECT * FROM booking_data WHERE email = $b";
+$result = $conn->query($sql);
+$sql1 = "SELECT * FROM user_data WHERE email = $b";
+$result1 = $conn->query($sql1);
+
+while($row = $result->fetch_assoc())
+{
+		echo "<div class='invoice-box'>
+			<table cellpadding='0' cellspacing='0'>
+				<tr class'top'>
+					<td colspan='2'>
 						<table>
 							<tr>
-								<td class="title">
-									<img src="images/logo.png" style="width: 100%; max-width: 300px" />
+								<td class='title'>
+									<img src='images/logo.png' style='width: 100%; max-width: 300px' />
 								</td>
 
 								<td>
-									Invoice #: 123<br />
-									Created: January 1, 2015<br />
+									Invoice #: " .$row["booking_id"] . "<br />
+									Created:". date("d-m-Y")."<br />
 								</td>
 							</tr>
 						</table>
 					</td>
-				</tr>
-
-				<tr class="information">
-					<td colspan="2">
+				</tr>";
+}
+				echo "<tr class='information'>
+					<td colspan=;2>
 						<table>
 							<tr>
 								<td>
                                 Goverdhan Villas, Sector 14<br />
                                 near Gordhan Sagar Lake, Hiran Magri<br />
                                 Udaipur, Rajasthan 313001
-								</td>
-
+								</td>";
+while($row1 = $result1->fetch_assoc()){
+								echo "
 								<td>
-									Name: <br />
-									Email Address: <br />
-									Phone Number:
+									Name: " .$row1["first_name"] ." ".$row["booking_id"] . "<br />
+									Phone Number: " .$row1["user_contact"] ."
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
 
-				<tr class="heading">
+				<tr class='heading'>
 					<td>Payment Method</td>
 
 					<td>Check #</td>
 				</tr>
 
-				<tr class="details">
+				<tr class='details'>
 					<td>Card</td>
 
 					<td>1000</td>
 				</tr>
 
-                <tr class="heading">
-					<td><span style="padding-right:200px;">Room Type</span>No. Of Rooms</td>
+                <tr class='heading'>
+					<td><span style='padding-right:200px;'>Room Type</span>No. Of Rooms</td>
 
 					<td>Price</td>
+				</tr>";
+}
+			echo"<tr class='item'>
+					<td>" .$a."</td>
+					<td>" .$z."</td>
+					";
+					if($_SESSION["a"] == $_SESSION["d"])
+					{
+						echo "<td>" .$premium."</td>";
+					}
+					if($_SESSION["a"] == $_SESSION["e"])
+					{
+						echo "<td>" .$deluxe."</td>";
+					}
+					if($_SESSION["a"] == $_SESSION["f"])
+					{
+						echo "<td>" .$lux."</td>";
+					}
+					echo"
 				</tr>
 
-				<tr class="item">
-					<td>Website design</td>
-
-					<td>₹3000.00</td>
-				</tr>
-
-				<tr class="total">
+				<tr class='total'>
 					<td></td>
 
-					<td>Total: ₹9000.00</td>
+					<td>Total:" .$g."</td>
 				</tr>
-			</table>
+			</table>";
+			?>
 		</div>
         <button type="button" class="btn btn-outline-secondary ml-5 mt-3 btn-lg" onclick="document.location='index.php'">Back to Home Page</button>
         <script async src="https://restpack.io/save-as-pdf.js"></script>

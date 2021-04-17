@@ -50,7 +50,7 @@ if($a == $f)
 }
 if ($conn->query($sql) === TRUE){
 	echo "\nNew record created successfully";
-  #header("Location: payment.php");
+  header("Location: invoice.php");
 } else{
 	echo "ERROR: " .$sql. "<br>" . $conn->error;
 }

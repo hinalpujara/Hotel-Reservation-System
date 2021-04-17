@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2021 at 09:20 AM
+-- Generation Time: Apr 17, 2021 at 12:09 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -53,24 +53,39 @@ INSERT INTO `admin_data` (`admin_id`, `first_name`, `last_name`, `contact`, `bir
 --
 
 CREATE TABLE `booking_data` (
+  `date` date DEFAULT current_timestamp(),
   `booking_id` int(11) NOT NULL,
-  `email` varchar(30) NOT NULL,
+  `email` varchar(20) NOT NULL,
   `checkin` date NOT NULL,
   `checkout` date NOT NULL,
   `room_type` varchar(10) NOT NULL,
-  `no_of_rooms` int(11) NOT NULL
+  `no_of_rooms` int(11) NOT NULL,
+  `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `booking_data`
 --
 
-INSERT INTO `booking_data` (`booking_id`, `email`, `checkin`, `checkout`, `room_type`, `no_of_rooms`) VALUES
-(1, 'pjayakar01@somaiya.edu', '2021-03-02', '2021-03-06', 'Deluxe', 1),
-(2, 'katie@gmail.com', '2021-03-24', '2021-03-28', 'Deluxe', 3),
-(3, 'joseph@gmail.com', '2021-04-21', '2021-04-29', 'Luxury', 1),
-(11, 'joey.castillo@gmail.com', '2021-05-03', '2021-05-07', 'Deluxe', 2),
-(12, 'ashleyj@yahoo.com', '2021-03-29', '2021-03-31', 'Luxury', 1);
+INSERT INTO `booking_data` (`date`, `booking_id`, `email`, `checkin`, `checkout`, `room_type`, `no_of_rooms`, `price`) VALUES
+('2021-04-06', 1, 'katie@gmail.com', '2021-03-02', '2021-03-06', 'Deluxe', 1, 0),
+('2021-04-20', 2, 'katie@gmail.com', '2021-03-24', '2021-03-28', 'Deluxe', 3, 0),
+('2021-04-22', 3, 'katie@gmail.com', '2021-04-21', '2021-04-29', 'Luxury', 1, 0),
+(NULL, 11, 'katie@gmail.com', '2021-05-03', '2021-05-07', 'Deluxe', 2, 0),
+(NULL, 12, 'katie@gmail.com', '2021-03-29', '2021-03-31', 'Luxury', 1, 0),
+(NULL, 14, 'katie@gmail.com', '2021-04-02', '2021-04-04', 'Deluxe', 1, 0),
+(NULL, 21, '', '2021-04-12', '2021-04-14', 'Luxury', 1, 0),
+(NULL, 22, '', '2021-04-11', '2021-04-13', 'Luxury', 3, 0),
+(NULL, 36, '', '2021-04-20', '2021-04-22', 'Deluxe', 1, 0),
+(NULL, 37, '', '2021-04-17', '2021-04-18', 'Luxury', 2, 0),
+(NULL, 38, '', '2021-04-12', '2021-04-14', 'Deluxe', 1, 0),
+(NULL, 39, '', '2021-04-19', '2021-04-20', 'Premium', 2, 15000),
+(NULL, 40, 'pinaki@kjsce.edu', '2021-04-22', '2021-04-20', 'Deluxe', 1, 10000),
+('2021-04-15', 42, 'joannareeves@gmail.c', '2021-04-29', '2021-04-30', 'Luxury', 1, 15000),
+('2021-04-15', 43, 'joannareeves@gmail.c', '2021-04-29', '2021-04-30', 'Luxury', 1, 15000),
+('2021-04-16', 44, 'rainejackson@gmail.c', '2021-04-03', '2021-04-06', 'Deluxe', 2, 20000),
+('2021-04-17', 45, 'katie@gmail.com', '2021-04-05', '2021-04-06', 'Deluxe', 2, 20000),
+('2021-04-17', 46, 'katie@gmail.com', '2021-04-05', '2021-04-06', 'Deluxe', 2, 20000);
 
 -- --------------------------------------------------------
 
@@ -91,36 +106,35 @@ CREATE TABLE `booking_date` (
 --
 
 INSERT INTO `booking_date` (`no`, `date_of_booking`, `premium_availability`, `deluxe_availability`, `luxury_availability`) VALUES
-(1, '2021-04-01', 10, 10, 10),
-(2, '2021-04-02', 10, 10, 10),
-(3, '2021-04-03', 10, 10, 10),
-(4, '2021-04-04', 10, 10, 10),
-(5, '2021-04-05', 10, 10, 10),
-(6, '2021-04-06', 10, 10, 10),
-(7, '2021-04-07', 10, 10, 10),
-(8, '2021-04-08', 10, 10, 10),
-(9, '2021-04-09', 10, 10, 10),
-(10, '2021-04-10', 10, 10, 10),
-(11, '2021-04-11', 10, 10, 10),
-(12, '2021-04-12', 10, 10, 10),
-(13, '2021-04-13', 10, 10, 10),
-(14, '2021-04-14', 10, 10, 10),
-(15, '2021-04-15', 10, 10, 10),
-(16, '2021-04-16', 10, 10, 10),
-(17, '2021-04-17', 10, 10, 10),
-(18, '2021-04-18', 10, 10, 10),
-(19, '2021-04-19', 10, 10, 10),
-(20, '2021-04-20', 10, 10, 10),
-(21, '2021-04-21', 10, 10, 10),
-(22, '2021-04-22', 10, 10, 10),
-(23, '2021-04-23', 10, 10, 10),
-(24, '2021-04-24', 10, 10, 10),
-(25, '2021-04-25', 10, 10, 10),
-(26, '2021-04-26', 10, 10, 10),
-(27, '2021-04-27', 10, 10, 10),
-(28, '2021-04-28', 10, 10, 10),
-(29, '2021-04-29', 10, 10, 10),
-(30, '2021-04-30', 10, 10, 10);
+(1, '2021-04-01', 10, 9, 10),
+(2, '2021-04-02', 10, 9, 10),
+(3, '2021-04-03', 10, 7, 10),
+(4, '2021-04-04', 10, 7, 10),
+(5, '2021-04-05', 10, 3, 10),
+(6, '2021-04-06', 10, 3, 10),
+(7, '2021-04-07', 10, 9, 10),
+(8, '2021-04-08', 10, 9, 10),
+(9, '2021-04-09', 10, 9, 10),
+(10, '2021-04-10', 10, 9, 10),
+(11, '2021-04-11', 10, 9, 10),
+(12, '2021-04-12', 10, 8, 9),
+(13, '2021-04-13', 10, 8, 9),
+(14, '2021-04-14', 10, 8, 9),
+(15, '2021-04-15', 10, 9, 10),
+(16, '2021-04-16', 10, 9, 10),
+(17, '2021-04-17', 10, 9, 8),
+(18, '2021-04-18', 10, 9, 8),
+(19, '2021-04-19', 8, 9, 10),
+(20, '2021-04-20', 8, 8, 9),
+(21, '2021-04-21', 10, 8, 9),
+(22, '2021-04-22', 10, 8, 9),
+(23, '2021-04-23', 10, 9, 10),
+(24, '2021-04-24', 10, 9, 10),
+(25, '2021-04-25', 10, 9, 10),
+(27, '2021-04-27', 10, 9, 10),
+(28, '2021-04-28', 10, 9, 10),
+(29, '2021-04-29', 10, 9, 7),
+(30, '2021-04-30', 10, 9, 7);
 
 -- --------------------------------------------------------
 
@@ -178,10 +192,16 @@ INSERT INTO `inclusions` (`room_type`, `AC`, `breakfast`, `tv`, `mini_fridge`, `
 --
 
 CREATE TABLE `occupancy` (
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `contact_number` varchar(11) NOT NULL,
+  `ccn` varchar(16) NOT NULL,
   `room_number` int(11) NOT NULL,
+  `check_in` date NOT NULL,
+  `check_out` date NOT NULL,
   `room_type` varchar(15) NOT NULL,
-  `occupied` tinyint(4) NOT NULL,
-  `user_username` varchar(20) NOT NULL
+  `number_of_rooms` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -217,7 +237,11 @@ CREATE TABLE `user_data` (
 --
 
 INSERT INTO `user_data` (`first_name`, `last_name`, `email`, `user_contact`, `user_password`) VALUES
-('Kate', 'Hudson', 'katie@gmail.com', 8723012345, '123@katie');
+('Kate', 'Hudson', 'katie@gmail.com', 8723012345, '123@katie'),
+('pinaki', 'jayakar', 'pinaki.j@somaiya.edu', 8723012345, 'dkac'),
+('pinaki', 'jayakar', 'pinaki.j@somaiya.edu', 8723012345, 'PINAKI'),
+('pinaki', '', '', 0, ''),
+('pinaki', 'jayakar', 'pjayakar01@gmail.com', 8723012345, 'Pinaki');
 
 --
 -- Indexes for dumped tables
@@ -234,8 +258,7 @@ ALTER TABLE `admin_data`
 -- Indexes for table `booking_data`
 --
 ALTER TABLE `booking_data`
-  ADD PRIMARY KEY (`booking_id`),
-  ADD UNIQUE KEY `username` (`email`);
+  ADD PRIMARY KEY (`booking_id`);
 
 --
 -- Indexes for table `booking_date`
@@ -248,12 +271,6 @@ ALTER TABLE `booking_date`
 --
 ALTER TABLE `enquire`
   ADD PRIMARY KEY (`Sr_No`);
-
---
--- Indexes for table `occupancy`
---
-ALTER TABLE `occupancy`
-  ADD PRIMARY KEY (`user_username`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -269,13 +286,13 @@ ALTER TABLE `admin_data`
 -- AUTO_INCREMENT for table `booking_data`
 --
 ALTER TABLE `booking_data`
-  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `booking_date`
 --
 ALTER TABLE `booking_date`
-  MODIFY `no` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `no` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- AUTO_INCREMENT for table `enquire`

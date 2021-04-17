@@ -12,7 +12,9 @@ $_SESSION["b"]=$_POST['email'];
 $_SESSION["d"]="Premium";
 $_SESSION["e"]="Deluxe";
 $_SESSION["f"]="Luxury";
-
+$_SESSION["premium"]=7500;
+$_SESSION["deluxe"]=10000;
+$_SESSION["luxury"]=15000;
 if($_SESSION["a"] == $_SESSION["d"])
 {
   $_SESSION["price"] = 7500*$_SESSION["z"];
