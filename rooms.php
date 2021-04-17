@@ -243,7 +243,17 @@
       <div class="col text-center" style="padding-top: 70px;">
         <h5 style="font-family: 'Merriweather', serif;">To book your room click on the 'BOOK NOW' button</>
           <div style="padding-top: 10px;">
-            <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+            <?php
+            if(isset($_SESSION["first_name"]))
+            {?>
+              <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+
+            <?php }
+            else
+            {?>
+              <button type="button" class="btn btn-success" onclick="document.location='userlogin.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+          <?php  }?>
+
           </div>
       </div>
     </div>
