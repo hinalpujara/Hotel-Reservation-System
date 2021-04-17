@@ -14,6 +14,7 @@
       
     </style>
     <title>The Victoria</title>
+    <link rel = "icon" href = "images/icon.jpg" type = "image/x-icon">
       </head>
       <body>
       <?php include "navbar/navbar.php"; ?>
