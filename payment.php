@@ -153,6 +153,14 @@ img {
     font-weight: bold;
     color: #000000
 }
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+span.price {
+  float: right;
+  color: grey;
+}
     </style>
     <script>
       $(document).ready(function(){
@@ -207,6 +215,22 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
       </head>
     <body>
     <?php include "navbar/navbar.php"; ?>
+    <!-- summary -->
+    <div class="container" style="padding-left:247px">
+    <div class="col-25 d-flex justify-content-center" style="padding-top:100px;width:645px" >
+    <div class="container jumbotron">
+      <h4 style="padding-bottom: 20px;"> <span>Summary</span> 
+        <span class="price" style="color:black;">
+          Price
+        </span>
+      </h4>
+      <p><span >Product 1</span> <span class="price">15000RS</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>15000RS</b></span></p>
+    </div>
+  </div>
+  </div>
+  <!-- summary... -->
   <!-- payment -->
   <div class="container-fluid">
     <div class="row justify-content-center">
