@@ -11,8 +11,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="display.css">
-    <title>Admin-The Victoria</title>
-    <link rel = "icon" href = "images/icon.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Contact Us-The Victoria</title>
     <style type="text/css">
         <?php include "navbar/navbarCSS.php"; ?>
     </style>
@@ -20,6 +21,105 @@
       <body>
       <?php include "navbar/adminnavbar.php"; ?>
     <br>
+    <div id="booking" class="section">
+      <div class="section-center">
+          <div class="container">
+              <div class="row">
+                  <div class="booking-form">
+                      <div class="form-header">
+                          <h2>Search Date</h2>
+                      </div>
+                      <?php
+
+                        ?>
+                      <form method="post" action="<?=$_SERVER['PHP_SELF'];?>">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                    <input class="form-control" type="date" placeholder="Enter Date" name="date" required>
+                                    <span class="form-label">Search Date</span>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                    <div class="form-btn"> <button name = "submit" class="submit-btn" href="payment.php">Check</button> </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <h2>Bookings on Specified Date</h2>
+  <?php
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "hotel_management";
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  if (isset($_POST['date'])) {
+    $num = $_POST['date'];
+    $records = mysqli_query($conn,"SELECT * FROM booking_data WHERE checkin <= '$num' AND checkout >= '$num'");
+    if ($records->num_rows >= 0){
+      echo "
+        <div class='table-wrapper'>
+        <table class='fl-table'>
+        <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Contact Number</th>
+        <th>Check-In</th>
+        <th>Check-Out</th>
+        </tr>";
+
+        while($row = mysqli_fetch_array($records)){
+          $a = $row["email"];
+          $record1 = mysqli_query($conn,"SELECT * FROM user_data WHERE email = '$a'");
+          $row1 = mysqli_fetch_array($record1);
+          $b = $row1["first_name"];
+          $c = $row1["last_name"];
+          $d = $row1["user_contact"];
+          echo"
+              <tr>
+              <td>
+              " .$b . "
+              </td>
+              <td>
+              " . $c . "
+              </td>
+              <td>
+              " . $a . "
+              </td>
+              <td>
+              " . $d . "
+              </td>
+              <td>
+              " .$row["checkin"] . "
+              </td>
+              <td>
+              " . $row["checkout"] . "
+              </td>
+              </tr>";
+        }
+      echo "</table>";
+      echo "</div>";
+    }
+    else{
+      echo "0 results";
+    }
+  }
+
+  $conn->close();
+
+  ?>
     <h2>Booking Data</h2>
           <?php
           $servername = "localhost";
@@ -70,7 +170,7 @@
             echo "</div>";
           }
           else{
-            echo "0 results";
+            echo "<tr><td>No Bookings on this date</td></tr>";
           }
           $conn->close();
           ?>

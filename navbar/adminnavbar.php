@@ -21,9 +21,6 @@
           <li class="nav-item pl-3">
             <a class="nav-link" href="checkout.php" style="color: black;"><b>Check-Out</b></span></a>
           </li>
-          <li class="nav-item pl-3">
-            <a class="nav-link" href="search.php" style="color: black;"><b>Search</b></a>
-          </li>
         </ul>
         <ul class='navbar-nav ml-auto'>
         <?php
