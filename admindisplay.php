@@ -67,7 +67,7 @@
   if (isset($_POST['date'])) {
     $num = $_POST['date'];
     $records = mysqli_query($conn,"SELECT * FROM booking_data WHERE checkin <= '$num' AND checkout >= '$num'");
-    if ($records->num_rows >= 0){
+    if ($records->num_rows > 0){
       echo "
         <div class='table-wrapper'>
         <table class='fl-table'>
@@ -113,7 +113,12 @@
       echo "</div>";
     }
     else{
-      echo "0 results";
+      echo "<div class='table-wrapper'>
+      <table class='fl-table'>
+      <tr>
+      <td>No Bookings on this Date</td></tr>
+      </table>
+      </div>";
     }
   }
 

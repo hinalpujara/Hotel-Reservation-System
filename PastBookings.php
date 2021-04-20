@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-    
+
         .custom-body {
             color: #566787;
             background: #f5f5f5;
@@ -276,7 +279,6 @@
                     <tr>
                         <th>Sr.No</th>
                         <th>Booking Date</th>
-                        <th>Status</th>
                         <th>CheckIn Date</th>
                         <th>CheckOut Date</th>
                         <th>Net Amount</th>
@@ -284,46 +286,33 @@
                 </thead>
                 <tbody>
                 <!-- for loop -->
-                    <tr>
-                        <td>1</td>
-                        <td>Jun 15, 2017</td>
-                        <td><span class="status text-success">&bull;</span> Booked</td>
-                        <th>CheckIn Date</th>
-                        <th>CheckOut Date</th>
-                        <td>$254</td>
-                    </tr>
-                    <!-- <tr>
-                        <td>2</td>
-                        <td>Jun 15, 2017</td>
-                        <td><span class="status text-success">&bull;</span> Booked</td>
-                        <th>CheckIn Date</th>
-                        <th>CheckOut Date</th>
-                        <td>$254</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Jul 04, 2017</td>
-                        <td><span class="status text-danger">&bull;</span> Cancelled</td>
-                        <th>CheckIn Date</th>
-                        <th>CheckOut Date</th>
-                        <td>$254</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Jun 15, 2017</td>
-                        <td><span class="status text-success">&bull;</span> Booked</td>
-                        <th>CheckIn Date</th>
-                        <th>CheckOut Date</th>
-                        <td>$254</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Jul 04, 2017</td>
-                        <td><span class="status text-danger">&bull;</span> Cancelled</td>
-                        <th>CheckIn Date</th>
-                        <th>CheckOut Date</th>
-                        <td>$254</td>
-                    </tr> -->
+                <?php
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "hotel_management";
+
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $a = $_SESSION["email"];
+                if ($conn->connect_error) {
+                  die("Connection failed: " . $conn->connect_error);
+                }
+                $count = 1;
+                $records = mysqli_query($conn,"SELECT * FROM booking_data WHERE email = '$a'");
+                while($row = mysqli_fetch_array($records)){
+                  echo"
+                  <tr>
+                  <td>" . $count . "</td>
+                  <td>" . $row["date"] . "</td>
+                  <th>" . $row["checkin"] . "</th>
+                  <th>" . $row["checkout"] . "</th>
+                  <td>" . $row["price"] . "</td>
+                  </tr>";
+                  $count++;
+                }
+                $conn->close();
+
+              ?>
                 </tbody>
             </table>
     </div>

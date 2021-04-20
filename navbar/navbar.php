@@ -29,7 +29,7 @@
         <?php
           if(isset($_SESSION["first_name"]))
           {
-            echo "<li class='nav-item dropdown'>";
+            echo "<a class='nav-link' href='PastBookings.php' style='color: black;'><b>Past Bookings</b></a>";
             echo "<a class='nav-link' href='logout.php' style='color: black;'><b>Logout</b></a>";
           }
           else
