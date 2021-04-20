@@ -17,7 +17,8 @@
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
 
-  <title>Home-The Victoria</title>
+  <title>Rooms-The Victoria</title>
+  <link rel = "icon" href = "images/icon.jpg" type = "image/x-icon">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
@@ -242,7 +243,17 @@
       <div class="col text-center" style="padding-top: 70px;">
         <h5 style="font-family: 'Merriweather', serif;">To book your room click on the 'BOOK NOW' button</>
           <div style="padding-top: 10px;">
-            <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+            <?php
+            if(isset($_SESSION["first_name"]))
+            {?>
+              <button type="button" class="btn btn-success" onclick="document.location='booking.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+
+            <?php }
+            else
+            {?>
+              <button type="button" class="btn btn-success" onclick="document.location='userlogin.php'" style="background-color:#FADBD8;color:black;border:white;">BOOK NOW</button>
+          <?php  }?>
+
           </div>
       </div>
     </div>

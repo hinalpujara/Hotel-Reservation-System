@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Payment-The Victoria</title>
+    <link rel = "icon" href = "images/icon.jpg" type = "image/x-icon">
     <style type="text/css">
         <?php include "navbar/navbarCSS.php"; ?>
 
@@ -153,6 +157,14 @@ img {
     font-weight: bold;
     color: #000000
 }
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+span.price {
+  float: right;
+  color: grey;
+}
     </style>
     <script>
       $(document).ready(function(){
@@ -207,6 +219,32 @@ for (var i = 0, len = sanitizedValue.length; i < len; i +=4) { parts.push(saniti
       </head>
     <body>
     <?php include "navbar/navbar.php"; ?>
+    <!-- summary -->
+    <?php
+    $b =  $_SESSION["b"];
+    $z =  $_SESSION["z"];
+    $a =  $_SESSION["a"];
+    $g = $_SESSION["price"];
+    $premium = $_SESSION["premium"];
+    $deluxe = $_SESSION["deluxe"];
+    $lux = $_SESSION["luxury"];
+
+  echo"  <div class='container' style='padding-left:247px'>
+    <div class='col-25 d-flex justify-content-center' style='padding-top:100px;width:645px' >
+    <div class='container jumbotron'>
+      <h4 style='padding-bottom: 20px;'> <span>Summary</span>
+        <span class='price' style='color:black;'>
+          Price
+        </span>
+      </h4>
+      <p><span >" .$a." - " .$z." rooms</span> <span class='price'>₹" .$g."</span></p>
+      <hr>
+      <p>Total <span class='price' style='color:black'><b>₹" .$g."</b></span></p>
+    </div>
+  </div>
+  </div>";
+  ?>
+  <!-- summary... -->
   <!-- payment -->
   <div class="container-fluid">
     <div class="row justify-content-center">

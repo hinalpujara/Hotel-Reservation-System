@@ -1,8 +1,12 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title>A simple, clean, and responsive HTML invoice template</title>
+		<link rel = "icon" href = "images/icon.jpg" type = "image/x-icon">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -123,76 +127,111 @@
         </div>
         <hr>
     </div>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "hotel_management";
 
-		<div class="invoice-box">
-			<table cellpadding="0" cellspacing="0">
-				<tr class="top">
-					<td colspan="2">
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}
+$b =  $_SESSION["b"];
+$z =  $_SESSION["z"];
+$a =  $_SESSION["a"];
+$g = $_SESSION["price"];
+$premium = $_SESSION["premium"];
+$deluxe = $_SESSION["deluxe"];
+$lux = $_SESSION["luxury"];
+$records = mysqli_query($conn,"SELECT * FROM booking_data ORDER BY booking_id DESC LIMIT 1");
+$record1 = mysqli_query($conn,"SELECT * FROM user_data WHERE email = '$b'");
+
+while($data = mysqli_fetch_array($records))
+{
+		echo "<div class='invoice-box'>
+			<table cellpadding='0' cellspacing='0'>
+				<tr class'top'>
+					<td colspan='2'>
 						<table>
 							<tr>
-								<td class="title">
-									<img src="images/logo.png" style="width: 100%; max-width: 300px" />
+								<td class='title'>
+									<img src='images/logo.png' style='width: 100%; max-width: 300px' />
 								</td>
 
 								<td>
-									Invoice #: 123<br />
-									Created: January 1, 2015<br />
+									Invoice #: " .$data["booking_id"] . "<br />
+									Created:". date("d-m-Y")."<br />
 								</td>
 							</tr>
 						</table>
 					</td>
-				</tr>
-
-				<tr class="information">
-					<td colspan="2">
+				</tr>";
+}
+				echo "<tr class='information'>
+					<td colspan=2>
 						<table>
 							<tr>
 								<td>
                                 Goverdhan Villas, Sector 14<br />
                                 near Gordhan Sagar Lake, Hiran Magri<br />
                                 Udaipur, Rajasthan 313001
-								</td>
-
+								</td>";
+while($row1 = mysqli_fetch_array($record1)){
+								echo "
 								<td>
-									Name: <br />
-									Email Address: <br />
-									Phone Number:
+									Name: " .$row1["first_name"] ." ".$row1["last_name"] . "<br />
+									Phone Number: " .$row1["user_contact"] ."
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
 
-				<tr class="heading">
+				<tr class='heading'>
 					<td>Payment Method</td>
 
 					<td>Check #</td>
 				</tr>
 
-				<tr class="details">
+				<tr class='details'>
 					<td>Card</td>
 
 					<td>1000</td>
 				</tr>
 
-                <tr class="heading">
-					<td><span style="padding-right:200px;">Room Type</span>No. Of Rooms</td>
+                <tr class='heading'>
+					<td><span style='padding-right:200px;'>Room Type</span>No. Of Rooms</td>
 
 					<td>Price</td>
+				</tr>";
+}
+			echo"<tr class='item'>
+					<td><span style='padding-right:290px;'>" .$a."</span>" .$z."</td>
+					";
+					if($_SESSION["a"] == $_SESSION["d"])
+					{
+						echo "<td> ₹" .$premium."</td>";
+					}
+					if($_SESSION["a"] == $_SESSION["e"])
+					{
+						echo "<td> ₹" .$deluxe."</td>";
+					}
+					if($_SESSION["a"] == $_SESSION["f"])
+					{
+						echo "<td> ₹" .$lux."</td>";
+					}
+					echo"
 				</tr>
 
-				<tr class="item">
-					<td>Website design</td>
-
-					<td>₹3000.00</td>
-				</tr>
-
-				<tr class="total">
+				<tr class='total'>
 					<td></td>
 
-					<td>Total: ₹9000.00</td>
+					<td>Total: ₹" .$g."</td>
 				</tr>
-			</table>
+			</table>";
+			?>
 		</div>
         <button type="button" class="btn btn-outline-secondary ml-5 mt-3 btn-lg" onclick="document.location='index.php'">Back to Home Page</button>
         <script async src="https://restpack.io/save-as-pdf.js"></script>

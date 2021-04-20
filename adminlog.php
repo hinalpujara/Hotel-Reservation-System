@@ -16,7 +16,8 @@
         <?php include "navbar/navbarCSS.php"; ?>
 
     </style>
-    <title>The Victoria</title>
+    <title>Admin login-The Victoria</title>
+    <link rel = "icon" href = "images/icon.jpg" type = "image/x-icon">
       </head>
       <body>
       <?php include "navbar/navbar.php"; ?>
