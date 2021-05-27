@@ -53,15 +53,15 @@
                 $result = mysqli_query($con,"SELECT * FROM user_data WHERE email='" . $_POST["email"] . "' and user_password = '". $_POST["password"]."'");
                 $row  = mysqli_fetch_array($result);
                 if(is_array($row)) {
-                  $_SESSION["first_name"] = $row['first_name'];
-                  $_SESSION["last_name"] = $row['last_name'];
-                  $_SESSION["email"] = $row['email'];
-                  header("Location:index.php");
+                $_SESSION["first_name"] = $row['first_name'];
+                $_SESSION["last_name"] = $row['last_name'];
+                $_SESSION["email"] = $row['email'];
+                header("Location:index.php");
                 }
                 else {
-                  echo "<script language='javascript'>";
-                  echo "alert('Incorrect Username or Password')";
-                  echo "</script>";
+                  echo "<div>
+                          <p>Incorrect Username or Password</p>
+                        </div>";
                 }
             }
             if(isset($_SESSION["first_name"])) {

@@ -11,8 +11,12 @@
             $_SESSION["last_name"] = $row['last_name'];
             $_SESSION["email"] = $row['email'];
             header("Location:index.php");
-            } else {
-             $message = "Invalid Username or Password!";
+            }
+            else {
+              echo "<script language='javascript'>";
+              echo "alert('WRONG PASSWORD')";
+              echo "</script>";
+              header("Location:userlogin.php");
             }
         }
         if(isset($_SESSION["first_name"])) {

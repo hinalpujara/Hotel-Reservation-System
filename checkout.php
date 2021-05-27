@@ -242,7 +242,7 @@
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                    <div class="form-btn"> <button name = "submit" class="submit-btn" href="payment.php">Check</button> </div>
+                                    <div class="form-btn"> <button name = "submit" class="submit-btn" href="payment.php">Check-Out</button> </div>
                                   </div>
                               </div>
                           </div>

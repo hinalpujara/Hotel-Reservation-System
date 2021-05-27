@@ -261,14 +261,7 @@
                                     </div>
                               </div>
                           </div>
-                          <div class="row">
-                              <div class="col-md-6">
-                                  <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                                    <span class="form-label">Email</span>
-                                  </div>
-                              </div>
-                          </div>
+                          
                           <div class="form-btn"> <button class="submit-btn" href="payment.php">Book Now</button> </div>
                       </form>
                   </div>
