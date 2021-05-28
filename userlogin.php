@@ -1,5 +1,6 @@
 <?php
   session_start();
+  ob_start();
  ?>
 <!doctype html>
 <html lang="en">

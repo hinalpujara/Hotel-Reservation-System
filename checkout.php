@@ -1,5 +1,6 @@
 <?php
   session_start();
+  ob_start();
  ?>
 <!doctype html>
 <html lang="en">
@@ -267,8 +268,10 @@
   WHERE room_number = $num ";
 
   if ($conn->query($sql) === TRUE){
-  	echo "\nDONE!";
-    header("Location: admindisplay.php");
+      echo "<script language='javascript'>";
+      echo "alert('Checked out!')";
+      echo "</script>";
+    header("Location: checkout.php");
   } else{
   	echo "ERROR: " .$sql. "<br>" . $conn->error;
   }

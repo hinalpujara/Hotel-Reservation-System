@@ -261,7 +261,6 @@
                                     </div>
                               </div>
                           </div>
-                          
                           <div class="form-btn"> <button class="submit-btn" href="payment.php">Book Now</button> </div>
                       </form>
                   </div>
